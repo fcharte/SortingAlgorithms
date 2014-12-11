@@ -1,3 +1,13 @@
+/**
+   @file algoritmos.c
+   @version 1.0
+   @author Francisco Charte Ojeda
+   @brief Implementación de los algoritmos de ordenación
+
+   Este módulo contiene el código en el que se implementan las distintas
+   funciones de ordenación. 
+*/
+
 #include "Definiciones.h"
 #include "Algoritmos.h"
 
