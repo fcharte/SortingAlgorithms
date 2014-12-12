@@ -83,3 +83,30 @@ void ordSeleccion(int elementos[], int nelementos, Informa f, TEstado* estado)
     estado->nOperaciones++;
   }
 }
+
+/* Insertion sort */
+void ordInsercion(int elementos[], int nElementos, Informa f, TEstado* estado)
+{
+  int i, j;
+  boolean fin=falso;
+
+  for (i=1; i < nElementos && !fin; i++)
+  {
+    elementos[nElementos] = elementos[i];
+    j = i;
+    while ((j > 0) && (elementos[j-1] > elementos[nElementos]) && !fin)
+    {
+      estado->deElemento=j-1;
+      estado->aElemento=j;
+      fin=f(estado);
+      elementos[j] = elementos[j-1];
+      estado->nOperaciones++;
+      j = j - 1;
+    }
+    estado->deElemento=nElementos;
+    estado->aElemento=j;
+    estado->nOperaciones++;
+    f(estado);
+    elementos[j] = elementos[nElementos];
+  }
+}
