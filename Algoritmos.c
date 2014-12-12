@@ -56,3 +56,30 @@ void ordBurbujaMejorado(int elementos[], int nelementos, Informa f, TEstado* est
     i++;
    }
 }
+
+/* Selection sort */
+void ordSeleccion(int elementos[], int nelementos, Informa f, TEstado* estado)
+{
+  boolean fin=falso;
+
+  int i, j;
+  int min, temp;
+
+  for (i = 0; i < nelementos-1 && !fin; i++)
+  {
+    min = i;
+    for (j = i+1; j < nelementos && !fin; j++)
+    {
+      if (elementos[j] < elementos[min])
+        min = j;
+      estado->nOperaciones++;
+    }
+    estado->deElemento=i;
+    estado->aElemento=min;
+    fin=f(estado);
+    temp = elementos[i];
+    elementos[i] = elementos[min];
+    elementos[min] = temp;
+    estado->nOperaciones++;
+  }
+}
