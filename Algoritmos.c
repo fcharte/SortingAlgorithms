@@ -110,3 +110,41 @@ void ordInsercion(int elementos[], int nElementos, Informa f, TEstado* estado)
     elementos[j] = elementos[nElementos];
   }
 }
+
+/* Shaker sort (also known as cocktail sort) */
+void ordSacudida(int elementos[], int nelementos, Informa f, TEstado* estado)
+{
+  int i, izq=0, der=nelementos-1, ultimo=0, temp;
+  boolean fin=falso;
+
+  while(izq<der && !fin) {
+    for (i = der; i > izq && !fin; i--) {
+      if (elementos[i-1] > elementos[i]) {
+          estado->deElemento=i-1;
+          estado->aElemento=i;
+          fin=f(estado);
+          temp = elementos[i-1];
+          elementos[i-1] = elementos[i];
+          elementos[i] = temp;
+          ultimo=i;
+      }
+      estado->nOperaciones++;
+    }
+
+    izq=ultimo;
+
+    for (i = izq; i < der && !fin; i++) {
+      if (elementos[i] > elementos[i+1]) {
+          estado->deElemento=i;
+          estado->aElemento=i+1;
+          fin=f(estado);
+          temp = elementos[i];
+          elementos[i] = elementos[i+1];
+          elementos[i+1] = temp;
+          ultimo=i;
+      }
+      estado->nOperaciones++;
+    }
+    der=ultimo;
+   };
+}
