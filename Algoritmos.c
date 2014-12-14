@@ -148,3 +148,31 @@ void ordSacudida(int elementos[], int nelementos, Informa f, TEstado* estado)
     der=ultimo;
    };
 }
+
+
+/* Shell sort */
+void ordShell(int elementos[], int nelementos, Informa f, TEstado* estado)
+{
+  int i, j, k, intervalo=nelementos, temp;
+  boolean fin=falso, terminado;
+
+  while(intervalo>0 && !fin) {
+    intervalo/=2;
+    do {
+     terminado=verdad;
+     for(i=0; i<nelementos-intervalo && !fin; i++) {
+        j = i+intervalo;
+        if (elementos[i] > elementos[j]) {
+          estado->deElemento=i;
+          estado->aElemento=j;
+          fin=f(estado);
+          temp = elementos[i];
+          elementos[i] = elementos[j];
+          elementos[j] = temp;
+          terminado=falso;
+         }
+     estado->nOperaciones++;
+    }
+   } while(!terminado);
+  }
+}
