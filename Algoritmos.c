@@ -176,3 +176,56 @@ void ordShell(int elementos[], int nelementos, Informa f, TEstado* estado)
    } while(!terminado);
   }
 }
+
+/* Internal recursive function for quick sort */
+boolean quickSort(int elementos[], int izq, int der, Informa f, TEstado* estado)
+{
+  int pivote, i, j;
+
+  boolean fin=falso;
+
+  i = izq;
+  j = der;
+  pivote = elementos[izq];
+  while (izq < der && !fin)
+  {
+    while ((elementos[der] >= pivote) && (izq < der) && !fin)
+      der--;
+    if (izq != der)
+    {
+      estado->deElemento=der;
+      estado->aElemento=izq;
+      estado->nOperaciones++;
+      fin|=f(estado);
+      elementos[izq] = elementos[der];
+      izq++;
+    }
+    while ((elementos[izq] <= pivote) && (izq < der) && !fin)
+      izq++;
+    if (izq != der)
+    {
+      estado->deElemento=izq;
+      estado->aElemento=der;
+      estado->nOperaciones++;
+      fin|=f(estado);
+      elementos[der] = elementos[izq];
+      der--;
+    }
+  }
+  elementos[izq] = pivote;
+  pivote = izq;
+  izq = i;
+  der = j;
+  if (izq < pivote && !fin)
+    fin|=quickSort(elementos, izq, pivote-1,f,estado);
+  if (der > pivote && !fin)
+    fin|=quickSort(elementos, pivote+1, der, f, estado);
+
+  return fin;
+}
+
+/* Quick sort */
+void ordQuick(int elementos[], int nelementos, Informa f, TEstado* estado)
+{
+  quickSort(elementos, 0, nelementos - 1, f, estado);
+}
