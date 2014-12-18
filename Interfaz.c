@@ -104,3 +104,78 @@ void Presentacion(TAlgoritmo* algoritmos, int nAlgoritmos)
    wrefresh(wProceso);
    wgetch(wConsola);
 }
+
+/* Función que muestra la lista de algoritmos y permite elegir los que
+  se quieren probar */
+boolean EnumeraAlgoritmos(TAlgoritmo* algoritmos,int nAlgoritmos)
+{
+   int i, tecla;
+
+   // Mostraremos la lista de algoritmos en la ventana superior
+   wclear(wProceso);
+   wattron(wProceso,COLOR_PAIR(2));
+   wattron(wProceso,A_BOLD);
+   EscribeCentrado(0,"Algoritmos de ordenación disponibles - Sorting algorithms available");
+
+   // Tres columnas con los nombres de los algoritmos y un índice entre corchetes
+   for(i=0;i<nAlgoritmos;i++) {
+      wmove(wProceso,3+i/3,5+25*(i%3));
+      wprintw(wProceso, "[%d] %s",i,algoritmos[i].nombre);
+   }
+
+   // Más instrucciones
+   wprintw(wProceso,"\n\nUtiliza las teclas de desplazamiento del cursor y ");
+   wprintw(wProceso,"la barra espaciadora  para elegir los algoritmos que ");
+   wprintw(wProceso,"quieres analizar. Pulsa INTRO para comenzar el proceso ");
+   wprintw(wProceso,"o ESC para terminar");
+   wrefresh(wProceso);
+
+   i=0; // Índice del algoritmo seleccionado
+   do {
+      // Situar el cursor en el lugar adecuado
+      wmove(wProceso,3+i/3,6+25*(i%3));
+      wrefresh(wProceso);
+      tecla=wgetch(wProceso); // y esperar al usuario
+
+      // según la tecla que se haya pulsado
+      switch(tecla) {
+        case 32: // la barra espaciado marca/desmarca el algoritmo actual
+          algoritmos[i].elegido=!algoritmos[i].elegido;
+          wattron(wProceso,algoritmos[i].elegido?COLOR_PAIR(3):COLOR_PAIR(2));
+          wattron(wProceso,A_BOLD);
+          wprintw(wProceso,"%d",i);
+          wattron(wProceso,COLOR_PAIR(2));
+          break;
+        case KEY_UP: // desplazamiento hacia arriba
+          i=i>2?i-3:i;
+          break;
+        case KEY_DOWN: // desplazamiento hacia abajo
+          i=i<nAlgoritmos-3?i+3:i;
+          break;
+        case KEY_LEFT: // desplazamiento hacia la izquierda
+          i=i?i-1:i;
+          break;
+        case KEY_RIGHT: // desplazamiento hacia la derecha
+          i=i<nAlgoritmos-1?i+1:i;
+          break;
+      }
+      // hasta que se pulse ESC o INTRO
+   } while(tecla!=27&&tecla!=10&&tecla!=13);
+
+   if(tecla!=27) { // Si no se ha pulsado ESC
+      wmove(wProceso,3,3);
+      // más instrucciones
+      wprintw(wProceso, "A continuación se utilizará  esta ventana para ");
+      wprintw(wProceso,"representar gráficamente los elementos que van ");
+      wprintw(wProceso,"ordenándose en un vector de enteros generado ");
+      wprintw(wProceso,"aleatoriamente, mientras en la ventana inferior ");
+      wprintw(wProceso,"se facilita información sobre el proceso. En ");
+      wprintw(wProceso,"cualquier momento puedes usar la tecla ESC para ");
+      wprintw(wProceso,"detener el algoritmo en curso y pasar al siguiente.");
+      wprintw(wProceso, "\n\nPulsa una tecla para comenzar ... - Press a key to start");
+      wrefresh(wProceso);
+      wgetch(wProceso);
+      return falso;
+   } else
+     return verdad; // Si se ha pulsado ESC lo notificamos para terminar
+}
