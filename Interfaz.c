@@ -77,3 +77,30 @@ int InicializaPantalla()
 
    return nElementos;  /* Devolvemos el número de elementos a representar */
 }
+
+/* Presentación del programa */
+void Presentacion(TAlgoritmo* algoritmos, int nAlgoritmos)
+{
+   int i;
+
+   /* Unos cuantos mensajes con instrucciones */
+   EscribeCentrado(0,"Algoritmos de ordenación - Sorting algorithms");
+   EscribeCentrado(1,"Francisco Charte Ojeda");
+   wmove(wProceso,4,3);
+   wprintw(wProceso,"Este programa permite comprobar el funcionamiento de ");
+   wprintw(wProceso,"diferentes algoritmos de ordenación, mostrando visualmente ");
+   wprintw(wProceso,"el proceso que siguen y calculando el número de  operaciones");
+   wprintw(wProceso," y  de intercambios que se llevan a cabo en cada caso. Su ");
+   wprintw(wProceso,"finalidad es exclusivamente didáctica, por ello está  abierto ");
+   wprintw(wProceso,"a la adición de otros algoritmos con gran sencillez.\n");
+
+   /* Indicamos el número de algoritmos existentes y mostramos el nombre de
+     cada uno de ellos */
+   wprintw(wProceso,"\n  Actualmente hay registrados %d algoritmos: ", nAlgoritmos);
+   for(i=0;i<nAlgoritmos;i++)
+      wprintw(wProceso, "%s - ",algoritmos[i].nombre);
+   wprintw(wProceso,"\n\n  Pulsa una tecla para comenzar a utilizar el programa - Press a key to start");
+
+   wrefresh(wProceso);
+   wgetch(wConsola);
+}
