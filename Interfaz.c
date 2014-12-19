@@ -179,3 +179,41 @@ boolean EnumeraAlgoritmos(TAlgoritmo* algoritmos,int nAlgoritmos)
    } else
      return verdad; // Si se ha pulsado ESC lo notificamos para terminar
 }
+
+/* Muestra los vectores que van a intercambiarse */
+void MuestraVectoresaIntercambiar(int i1, int i2, int v1, int v2)
+{
+  if(i2>=COLS-2) {
+    wmove(wProceso,0,i1);
+    wvline(wProceso,' ',LINES-8);
+
+    // y las ponemos en su nueva posición
+    wattron(wProceso,COLOR_PAIR(2));
+    wmove(wProceso,(LINES-8-v2)/2,i1);
+    wvline(wProceso,ACS_VLINE,v2);
+    wrefresh(wProceso);
+    return;
+  }
+  // La línea del primer elemento a intercambiar aparece en rojo
+  wattron(wProceso,COLOR_PAIR(4));
+  wmove(wProceso,(LINES-8-v1)/2,i1);
+  wvline(wProceso,ACS_VLINE,v1);
+  // y la línea del segundo elemento en verde
+  wattron(wProceso,COLOR_PAIR(5));
+  wmove(wProceso,(LINES-8-v2)/2,i2);
+  wvline(wProceso,ACS_VLINE,v2);
+  wrefresh(wProceso);
+
+  // Eliminamos esas líneas
+  wmove(wProceso,0,i1);
+  wvline(wProceso,' ',LINES-8);
+  wmove(wProceso,0,i2);
+  wvline(wProceso,' ',LINES-8);
+
+  // y las ponemos en su nueva posición
+  wattron(wProceso,COLOR_PAIR(2));
+  wmove(wProceso,(LINES-8-v1)/2,i2);
+  wvline(wProceso,ACS_VLINE,v1);
+  wmove(wProceso,(LINES-8-v2)/2,i1);
+  wvline(wProceso,ACS_VLINE,v2);
+}
