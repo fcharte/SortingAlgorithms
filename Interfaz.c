@@ -217,3 +217,40 @@ void MuestraVectoresaIntercambiar(int i1, int i2, int v1, int v2)
   wmove(wProceso,(LINES-8-v2)/2,i1);
   wvline(wProceso,ACS_VLINE,v2);
 }
+
+/* Notificación de intercambio de elementos */
+boolean MuestraNotificacion(TEstado* estado, int nElementos)
+{
+  int tecla;
+  boolean retorno=falso; // Indicación de que hay que interrumpir
+
+  // Establecemos el retardo
+  delay_output(retardo);
+  // y comprobamos si hay alguna pulsación de tecla
+  tecla=wgetch(wProceso);
+
+  switch(tecla) { // dependiendo de la tecla pulsada
+    case 27:
+         retorno=verdad; // interrumpimos el algoritmo
+         break;
+    case '-':
+         // incrementamos el retardo
+         retardo=retardo<1000?retardo+10:retardo;
+         break;
+    case '+':
+         // o lo reducimos
+         retardo=retardo>10?retardo-10:retardo;
+         break;
+  }
+
+  estado->nIntercambios++; // Incrementar el número de intercambios
+
+  // y mostrar la información de cómo va el proceso en la consola
+  wmove(wConsola,2,25);
+  wprintw(wConsola, "%7d",estado->nOperaciones);
+  wmove(wConsola,2,40);
+  wprintw(wConsola, "%7d",estado->nIntercambios);
+  wrefresh(wConsola);
+
+  return retorno;
+}
