@@ -297,3 +297,20 @@ void MuestraFinAlgoritmo(boolean ordenado)
     wgetch(wConsola);
 }
 
+/* Funcion que muestra gráficamente el vector */
+void MuestraVector(int* vector, int nElementos)
+{
+   int i,j;
+
+   wclear(wProceso);
+   wattron(wProceso,COLOR_PAIR(2));
+   wattron(wProceso,A_BOLD);
+   // por cada elemento
+   for(i=0;i<nElementos;i++) {
+     // dibujaremos una línea vertical centrada
+     j=(LINES-8-vector[i])/2;
+     wmove(wProceso,j,i);
+     wvline(wProceso,ACS_VLINE,vector[i]);
+   }
+   wrefresh(wProceso);
+}
