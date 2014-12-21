@@ -254,3 +254,46 @@ boolean MuestraNotificacion(TEstado* estado, int nElementos)
 
   return retorno;
 }
+
+/* Se va a iniciar la ejecución de un algoritmo */
+void MuestraInicioAlgoritmo(char* nombre)
+{
+    // Preparamos la consola con las indicaciones apropiadas */
+    wattron(wConsola,COLOR_PAIR(1));
+    wattroff(wConsola,A_BOLD);
+    wclear(wConsola);
+    wmove(wConsola,0,60);
+    wprintw(wConsola, "+ más rápido");
+    wmove(wConsola,1,60);
+    wprintw(wConsola, "- más lento");
+    wmove(wConsola,2,60);
+    wprintw(wConsola, "ESC detener");
+    wmove(wConsola,0,5);
+    wprintw(wConsola,"Algoritmo");
+    wmove(wConsola,0,25);
+    wprintw(wConsola,"Operaciones");
+    wmove(wConsola,0,40);
+    wprintw(wConsola,"Intercambios");
+    wattron(wConsola,A_BOLD);
+    wmove(wConsola,2,5);
+    wprintw(wConsola,nombre);
+    wrefresh(wConsola);
+}
+
+/* Se ha finalizado la ejecución de un algoritmo */
+void MuestraFinAlgoritmo(boolean ordenado)
+{
+    wmove(wConsola,3,60);
+    // dependiendo de que los elementos estén ordenados o no
+    if(ordenado) {
+      wattron(wConsola,COLOR_PAIR(2));
+      // indicamos simplemente que se ha terminado
+      wprintw(wConsola,"*** TERMINADO ***");
+    } else {
+      wattron(wConsola,COLOR_PAIR(4));
+      // o que hay un error en la ordenación
+      wprintw(wConsola,"*** ERROR ***");
+    }
+    wgetch(wConsola);
+}
+
