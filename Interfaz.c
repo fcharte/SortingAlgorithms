@@ -297,7 +297,7 @@ void MuestraFinAlgoritmo(boolean ordenado)
     wgetch(wConsola);
 }
 
-/* Funcion que muestra gráficamente el vector */
+/* Función que muestra gráficamente el vector */
 void MuestraVector(int* vector, int nElementos)
 {
    int i,j;
@@ -313,4 +313,49 @@ void MuestraVector(int* vector, int nElementos)
      wvline(wProceso,ACS_VLINE,vector[i]);
    }
    wrefresh(wProceso);
+}
+
+/* Muestra el resumen de la prueba de los distintos algoritmos */
+void MuestraResumen(TAlgoritmo* algoritmos, TEstado* estado, int nAlgoritmos)
+{
+   int lineas=0,i;
+
+   WINDOW *wResumen;  // En una ventana temporal
+
+   // Contamos el número de algoritmos probados
+   for(i=0;i<nAlgoritmos;i++)
+     if(algoritmos[i].elegido)
+        lineas++;
+
+   /* y creamos una ventana con el tamaño adecuado para informar sobre ellos,
+     centrándola en la pantalla */
+   wResumen=newwin(lineas+5, 50, (LINES-(lineas+4))/2,(COLS-50)/2);
+   wbkgdset(wResumen,COLOR_PAIR(3));
+   wclear(wResumen);
+   wattron(wResumen,COLOR_PAIR(3));
+   wattron(wResumen,A_BOLD);
+   wborder(wResumen, 0, 0, 0, 0, 0, 0, 0, 0);
+   wmove(wResumen,1,2);
+   wprintw(wResumen,"%-20s %11s  %12s","Algoritmo","Operaciones","Intercambios");
+
+   lineas=3; // Comenzaremos en la línea 3
+   for(i=0;i<nAlgoritmos;i++)
+     if(algoritmos[i].elegido) {
+       // mostrando los resultados de cada algoritmo ejecutado
+       wmove(wResumen,lineas++,2);
+       wprintw(wResumen,"%-20s %11d  %12d",
+        algoritmos[i].nombre,estado[i].nOperaciones,estado[i].nIntercambios);
+       algoritmos[i].elegido=falso;
+
+     }
+
+   wrefresh(wResumen);
+   wgetch(wConsola); // esperamos una tecla
+   delwin(wResumen); // y eliminamos la ventana
+ }
+
+/* Finalización de la interfaz */
+void FinInterfaz()
+{
+   endwin(); // Fin de ncurses
 }
