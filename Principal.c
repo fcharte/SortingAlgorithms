@@ -27,3 +27,33 @@
     @endhtmlonly
 */
 
+/**
+   @file principal.c
+   @version 1.0
+   @author Francisco Charte Ojeda
+   @brief Núcleo del programa de algoritmos de ordenación
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+#include "Interfaz.h"
+#include "Definiciones.h"
+#include "Algoritmos.h"
+
+/**@brief Matriz con los algoritmos registrados
+
+   Si quieren agregarse otros algoritmos, aparte de añadir el prototipo de la
+   función a Algoritmos.h y la implementación a Algoritmos.c, es necesario
+   agregar una línea a este vector indicando su nombre descriptivo, el nombre
+   de la función que lo implementa y dejando el tercer componente a falso.
+*/
+TAlgoritmo algoritmos[] = {
+  {"Selección", ordSeleccion, falso},
+  {"Inserción", ordInsercion, falso},
+  {"Burbuja", ordBurbuja, falso},
+  {"Burbuja mejorado", ordBurbujaMejorado, falso},
+  {"Sacudida", ordSacudida, falso },
+  {"Shell", ordShell, falso },
+  {"Quick", ordQuick, falso }
+
+};
