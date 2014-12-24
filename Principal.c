@@ -57,3 +57,28 @@ TAlgoritmo algoritmos[] = {
   {"Quick", ordQuick, falso }
 
 };
+
+int nElementos; // Número de elementos a ordenar
+
+/* Número de algoritmos registrados. nAlgoritmos se actualiza automáticamente
+  en caso de que se agreguen m s elementos a la matriz algoritmos anterior */
+int nAlgoritmos=sizeof(algoritmos)/sizeof(algoritmos[0]);
+
+/**@brief Función que recibe las notificaciones del algoritmo
+*/
+boolean Notifica(TEstado* estado)
+{
+  boolean retorno=falso;
+  int i,j,tecla;
+
+  // Se muestran los elementos a intercambiar
+  MuestraVectoresaIntercambiar(
+    estado->aElemento,estado->deElemento,
+    estado->vector[estado->aElemento],
+    estado->vector[estado->deElemento]);
+
+  // y se notifica el cambio
+  retorno=MuestraNotificacion(estado, nElementos);
+
+  return retorno;
+}
