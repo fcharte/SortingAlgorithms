@@ -104,3 +104,59 @@ boolean VerificaOrden(int* elementos, int nElementos)
 
    return ordenado;
 }
+
+/* Punto de entrada a la aplicación */
+int main(int argc, char *argv[])
+{
+   int i, rango;
+   boolean fin=falso;
+
+   int *elementos, *vector;
+   TEstado *estado;
+
+   /* Inicializamos la interfaz y obtenemos el número de elementos
+     que pueden representarse */
+   nElementos=InicializaPantalla();
+
+   // Obtenemos el rango de los valores
+   rango=CalculaRango();
+
+   /* y creamos los vectores. Se usan dos, uno que mantiene los elementos
+    aleatorios obtenidos inicialmente y otro que va entregándose a los
+    algoritmos, para que todos ellos operen sobre el mismo conjunto de
+    elementos y puedan ser comparados de manera homogénea. */
+   elementos=malloc(sizeof(int)*(nElementos+1));
+   assert(elementos!=NULL);
+   vector=malloc(sizeof(int)*(nElementos+1));
+   assert(vector!=NULL);
+   estado=malloc(sizeof(TEstado)*nAlgoritmos);
+   assert(estado!=NULL);
+
+   // Presentación del programa
+   Presentacion(algoritmos,nAlgoritmos);
+
+   while(!fin) { // Hasta que se pulse ESC en la selección de algoritmos
+    // Obtenemos un nuevo vector aleatorio
+    VectorAleatorio(vector,nElementos,rango);
+    // y permitimos la selección de algoritmos a aplicarle
+    fin=EnumeraAlgoritmos(algoritmos, nAlgoritmos);
+    if(!fin) { // si no se optado por salir del programa
+      for(i=0; i<nAlgoritmos; i++) {
+       if(algoritmos[i].elegido) { // y los entregamos a cada algoritmo elegido
+         MuestraVector(vector,nElementos); // mostramos los elementos
+         memcpy(elementos,vector,nElementos*sizeof(int));
+         estado[i].nOperaciones=estado[i].nIntercambios=0;
+         estado[i].vector=elementos;
+         MuestraInicioAlgoritmo(algoritmos[i].nombre);
+         algoritmos[i].f(elementos,nElementos,Notifica,&estado[i]);
+         MuestraVector(elementos,nElementos); // mostramos los elementos
+         MuestraFinAlgoritmo(VerificaOrden(elementos,nElementos));
+       }
+     }
+     MuestraResumen(algoritmos,estado,nAlgoritmos);
+    }
+   }
+   free(estado);
+   free(elementos);
+   FinInterfaz();
+}
