@@ -82,3 +82,25 @@ boolean Notifica(TEstado* estado)
 
   return retorno;
 }
+
+/**@brief Genera un vector con el número adecuado de elementos aleatorio */
+void VectorAleatorio(int* elementos, int nElementos, int rango)
+{
+   int i;
+
+   for(i=0;i<nElementos;i++)
+     // los números estarán en el rango adecuado
+     elementos[i] = rand()%rango+1;
+}
+
+/**@brief Esta función comprueba si el vector está bien ordenado */
+boolean VerificaOrden(int* elementos, int nElementos)
+{
+   boolean ordenado=verdad;
+   int i;
+
+   for(i=0;i<nElementos-1 && ordenado; i++)
+     ordenado=elementos[i]<=elementos[i+1];
+
+   return ordenado;
+}
