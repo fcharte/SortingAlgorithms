@@ -15,6 +15,7 @@
 #define __INTERFAZ_H__
 
 #include "Definiciones.h"
+#include <string.h>
 
 /**@brief Escribe un texto centrado
 

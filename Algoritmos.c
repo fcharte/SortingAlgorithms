@@ -17,7 +17,7 @@
 void ordBurbuja(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
   int i, j, temp;
-  boolean fin=false;
+  boolean fin=falso;
 
   for (i = (nelementos - 1); i >= 0 && !fin; i--)
     for (j = 1; j <= i && !fin; j++) {
@@ -37,10 +37,10 @@ void ordBurbuja(int elementos[], int nelementos, Informa f, TEstado* estado)
 void ordBurbujaMejorado(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
   int i=1, j, temp;
-  boolean fin=false, hayCambio=true;
+  boolean fin=falso, hayCambio=verdad;
 
   while(i<nelementos && hayCambio && !fin) {
-    hayCambio=false;
+    hayCambio=falso;
     for (j = 0; j <= nelementos-i && !fin; j++) {
       if (elementos[j] > elementos[j+1]) {
         temp = elementos[j];
@@ -49,7 +49,7 @@ void ordBurbujaMejorado(int elementos[], int nelementos, Informa f, TEstado* est
         estado->deElemento=j;
         estado->aElemento=j+1;
         fin=f(estado);
-        hayCambio=true;
+        hayCambio=verdad;
       }
       estado->nOperaciones++;
     }
@@ -60,7 +60,7 @@ void ordBurbujaMejorado(int elementos[], int nelementos, Informa f, TEstado* est
 /* Selection sort */
 void ordSeleccion(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
-  boolean fin=false;
+  boolean fin=falso;
 
   int i, j;
   int min, temp;
@@ -88,7 +88,7 @@ void ordSeleccion(int elementos[], int nelementos, Informa f, TEstado* estado)
 void ordInsercion(int elementos[], int nElementos, Informa f, TEstado* estado)
 {
   int i, j;
-  boolean fin=false;
+  boolean fin=falso;
 
   for (i=1; i < nElementos && !fin; i++)
   {
@@ -115,7 +115,7 @@ void ordInsercion(int elementos[], int nElementos, Informa f, TEstado* estado)
 void ordSacudida(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
   int i, izq=0, der=nelementos-1, ultimo=0, temp;
-  boolean fin=false;
+  boolean fin=falso;
 
   while(izq<der && !fin) {
     for (i = der; i > izq && !fin; i--) {
@@ -154,12 +154,12 @@ void ordSacudida(int elementos[], int nelementos, Informa f, TEstado* estado)
 void ordShell(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
   int i, j, k, intervalo=nelementos, temp;
-  boolean fin=false, terminado;
+  boolean fin=falso, terminado;
 
   while(intervalo>0 && !fin) {
     intervalo/=2;
     do {
-     terminado=true;
+     terminado=verdad;
      for(i=0; i<nelementos-intervalo && !fin; i++) {
         j = i+intervalo;
         if (elementos[i] > elementos[j]) {
@@ -169,7 +169,7 @@ void ordShell(int elementos[], int nelementos, Informa f, TEstado* estado)
           temp = elementos[i];
           elementos[i] = elementos[j];
           elementos[j] = temp;
-          terminado=false;
+          terminado=falso;
          }
      estado->nOperaciones++;
     }
@@ -182,7 +182,7 @@ boolean quickSort(int elementos[], int izq, int der, Informa f, TEstado* estado)
 {
   int pivote, i, j;
 
-  boolean fin=false;
+  boolean fin=falso;
 
   i = izq;
   j = der;
