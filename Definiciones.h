@@ -13,7 +13,10 @@
 #define __DEFINICIONES_H__
 
 /**@brief Tipo usado para indicadores y centinelas */
-typedef enum {false=0,true} boolean;
+typedef enum {
+   falso=0,
+   verdad
+} boolean; 
 
 /**@brief Información que cada algoritmo devolverá al programa principal
 
