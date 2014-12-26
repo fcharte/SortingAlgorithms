@@ -48,13 +48,13 @@
    de la función que lo implementa y dejando el tercer componente a falso.
 */
 TAlgoritmo algoritmos[] = {
-  {"Selección", ordSeleccion, falso},
-  {"Inserción", ordInsercion, falso},
-  {"Burbuja", ordBurbuja, falso},
-  {"Burbuja mejorado", ordBurbujaMejorado, falso},
-  {"Sacudida", ordSacudida, falso },
-  {"Shell", ordShell, falso },
-  {"Quick", ordQuick, falso }
+  {"Selección", ordSeleccion, false},
+  {"Inserción", ordInsercion, false},
+  {"Burbuja", ordBurbuja, false},
+  {"Burbuja mejorado", ordBurbujaMejorado, false},
+  {"Sacudida", ordSacudida, false },
+  {"Shell", ordShell, false },
+  {"Quick", ordQuick, false }
 
 };
 
@@ -68,7 +68,7 @@ int nAlgoritmos=sizeof(algoritmos)/sizeof(algoritmos[0]);
 */
 boolean Notifica(TEstado* estado)
 {
-  boolean retorno=falso;
+  boolean retorno=false;
   int i,j,tecla;
 
   // Se muestran los elementos a intercambiar
@@ -96,7 +96,7 @@ void VectorAleatorio(int* elementos, int nElementos, int rango)
 /**@brief Esta función comprueba si el vector está bien ordenado */
 boolean VerificaOrden(int* elementos, int nElementos)
 {
-   boolean ordenado=verdad;
+   boolean ordenado=true;
    int i;
 
    for(i=0;i<nElementos-1 && ordenado; i++)
@@ -109,7 +109,7 @@ boolean VerificaOrden(int* elementos, int nElementos)
 int main(int argc, char *argv[])
 {
    int i, rango;
-   boolean fin=falso;
+   boolean fin=false;
 
    int *elementos, *vector;
    TEstado *estado;
