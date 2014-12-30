@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: Referencia del Archivo D:/Ordena/Definiciones.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>Referencia del Archivo D:/Ordena/Definiciones.h</h1>Definición de tipos de datos necesarios para la aplicación. <a href="#_details">Más...</a>
+<p>
+
+<p>
+<a href="_definiciones_8h-source.html">Ir al código fuente de este archivo.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Clases</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html">TEstado</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Información que cada algoritmo devolverá al programa principal.  <a href="struct_t_estado.html#_details">Más...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Información que registro de los algoritmos.  <a href="struct_t_algoritmo.html#_details">Más...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Tipos definidos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a> )(<a class="el" href="struct_t_estado.html">TEstado</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Firma de la función de notificación.  <a href="#bb5107dd485d82712eadf7a30ab1281f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_definiciones_8h.html#0b019e30ebfa45bb038857e02e3dcdf5">Ordena</a> )(int[], int, <a class="el" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a>, <a class="el" href="struct_t_estado.html">TEstado</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Firma de las funciones de ordenación.  <a href="#0b019e30ebfa45bb038857e02e3dcdf5"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Enumeraciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a> { <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a> = 0, 
+<a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tipo usado para indicadores y centinelas.  <a href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">Más...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+Definición de tipos de datos necesarios para la aplicación. 
+<p>
+<dl compact><dt><b>Versión:</b></dt><dd>1.0 </dd></dl>
+<dl compact><dt><b>Autor:</b></dt><dd>Francisco Charte Ojeda</dd></dl>
+Este archivo de cabecera debe ser incluido en cualquier módulo que desee añadirse al programa, por ejemplo conteniendo algoritmos adicionales de ordenación, ya que contiene los tipos fundamentales que facilitan la comunicación entre los algoritmos de ordenación y la aplicación principal. 
+<p>
+Definición en el archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.<hr><h2>Documentación de los tipos definidos</h2>
+<a class="anchor" name="bb5107dd485d82712eadf7a30ab1281f"></a><!-- doxytag: member="Definiciones.h::Informa" ref="bb5107dd485d82712eadf7a30ab1281f" args=")(TEstado *)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">typedef <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>(* <a class="el" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a>)(<a class="el" href="struct_t_estado.html">TEstado</a> *)          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Firma de la función de notificación. 
+<p>
+La función de notificación es una función a la que los algoritmos de ordenación invocarán cada vez que se produzca un intercambio. Dicha función recibe como parámetro un puntero a <a class="el" href="struct_t_estado.html">TEstado</a>, con el estado del proceso, y devuelve un valor <em>boolean</em> que, de ser <em>verdad</em>, indicará al algoritmo que debe interrumpirse.<p>
+Es la aplicación principal la que aporta esta función de notificación, si bien puede ser sustituida por otra que efectúe la tarea de otra forma pero mantenga la firma. 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00050">50</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="0b019e30ebfa45bb038857e02e3dcdf5"></a><!-- doxytag: member="Definiciones.h::Ordena" ref="0b019e30ebfa45bb038857e02e3dcdf5" args=")(int[], int, Informa, TEstado *)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">typedef void(* <a class="el" href="_definiciones_8h.html#0b019e30ebfa45bb038857e02e3dcdf5">Ordena</a>)(int[], int, <a class="el" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a>, <a class="el" href="struct_t_estado.html">TEstado</a> *)          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Firma de las funciones de ordenación. 
+<p>
+Todas las funciones de ordenación deben ajustarse a esta firma, tomando como argumentos el vector de enteros a ordenar, un entero que indica el número de elementos en el vector, un puntero a la función de notificación y un puntero a una estructura <a class="el" href="struct_t_estado.html">TEstado</a>.<p>
+Cualquier función de ordenación que se agregue al programa, para probar algoritmos adicionales, tiene que ajustarse a esta norma. 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00062">62</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.    </td>
+  </tr>
+</table>
+<hr><h2>Documentación de las enumeraciones</h2>
+<a class="anchor" name="7c6368b321bd9acd0149b030bb8275ed"></a><!-- doxytag: member="Definiciones.h::boolean" ref="7c6368b321bd9acd0149b030bb8275ed" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">enum <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Tipo usado para indicadores y centinelas. 
+<p>
+<dl compact><dt><b>Valores de la enumeración: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd"></a><!-- doxytag: member="falso" ref="7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd" args="" -->falso</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f"></a><!-- doxytag: member="verdad" ref="7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f" args="" -->verdad</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00016">16</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.<div class="fragment"><pre class="fragment"><a name="l00016"></a>00016              {
+<a name="l00017"></a>00017    <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>=0,
+<a name="l00018"></a>00018    <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>
+<a name="l00019"></a>00019 } <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>;
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Generado el Mon May 22 17:13:21 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

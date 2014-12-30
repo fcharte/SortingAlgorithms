@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: C:/Documents and Settings/Francisco/Mis documentos/Estructuras/estadis.c Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>C:/Documents and Settings/Francisco/Mis documentos/Estructuras/estadis.c</h1><a href="estadis_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include "<a class="code" href="estadis_8h.html">estadis.h</a>"</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a><a class="code" href="estadis_8h.html#cf366b81c544cc2b0c7fec415284368d">00004</a> <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#cf366b81c544cc2b0c7fec415284368d">factorial</a>(<span class="keywordtype">long</span> n) {
+<a name="l00005"></a>00005      <span class="keywordflow">return</span> n&gt;1 ? n*<a class="code" href="estadis_8c.html#cf366b81c544cc2b0c7fec415284368d">factorial</a>(n-1) : 1;
+<a name="l00006"></a>00006 }
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="estadis_8h.html#3639a98907117d02a8b1b9ab65d9f19a">00008</a> <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#3639a98907117d02a8b1b9ab65d9f19a">potencia</a>(<span class="keywordtype">long</span> base,<span class="keywordtype">long</span> exponente) {
+<a name="l00009"></a>00009      <span class="keywordtype">long</span> resultado=1;
+<a name="l00010"></a>00010      <span class="keywordtype">int</span> indice;
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012      <span class="keywordflow">if</span>(exponente==0)
+<a name="l00013"></a>00013         <span class="keywordflow">return</span> 1;
+<a name="l00014"></a>00014      <span class="keywordflow">if</span>(exponente&lt;0)
+<a name="l00015"></a>00015         <span class="keywordflow">return</span> -1;
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017      <span class="keywordflow">for</span>(indice=1;indice&lt;=exponente;indice++)
+<a name="l00018"></a>00018         resultado*=base;
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020      <span class="keywordflow">return</span> resultado;
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="estadis_8h.html#25510e369e72e243b192e2191e9d463d">00023</a> <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#25510e369e72e243b192e2191e9d463d">leeEntero</a>() {
+<a name="l00024"></a>00024 }
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="estadis_8h.html#939b39596aa2ad2cee28d2532c151842">00027</a> <span class="keywordtype">double</span> <a class="code" href="estadis_8c.html#939b39596aa2ad2cee28d2532c151842">ecuacion</a>(<span class="keywordtype">long</span> a, <span class="keywordtype">long</span> b, <span class="keywordtype">long</span> c) {
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="estadis_8h.html#2931429a493d5c0feca19b04a99e7f55">00030</a> <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#2931429a493d5c0feca19b04a99e7f55">mcd</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b) {
+<a name="l00031"></a>00031    <span class="keywordtype">float</span> mayor, menor;
+<a name="l00032"></a>00032    <span class="keywordtype">long</span> resto, cociente;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034    <span class="keywordflow">if</span>(a&gt;b) {
+<a name="l00035"></a>00035      mayor=a;
+<a name="l00036"></a>00036      menor=b;
+<a name="l00037"></a>00037    } <span class="keywordflow">else</span> {
+<a name="l00038"></a>00038      mayor=b;
+<a name="l00039"></a>00039      menor=a;
+<a name="l00040"></a>00040    }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042    resto=menor;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044    <span class="keywordflow">while</span>(((<span class="keywordtype">long</span> )mayor)%((<span class="keywordtype">long</span> )menor)!=0) {
+<a name="l00045"></a>00045       cociente=mayor/menor;
+<a name="l00046"></a>00046       resto=((long )mayor)%((long)menor);
+<a name="l00047"></a>00047       mayor=menor;
+<a name="l00048"></a>00048       menor=resto;
+<a name="l00049"></a>00049    }
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051    <span class="keywordflow">return</span> resto;
+<a name="l00052"></a>00052 }
+<a name="l00053"></a>00053 
+<a name="l00054"></a><a class="code" href="estadis_8h.html#7e45cb6c7956783090107092da66f7d9">00054</a> <span class="keywordtype">long</span>* <a class="code" href="estadis_8c.html#7e45cb6c7956783090107092da66f7d9">divisores</a>(<span class="keywordtype">long</span> a) {
+<a name="l00055"></a>00055 }
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="estadis_8h.html#c5d11897fc9dd5a98fd58fd5228350fd">00057</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#c5d11897fc9dd5a98fd58fd5228350fd">leeRacional</a>() {
+<a name="l00058"></a>00058    <a class="code" href="struct_t_racional.html">TRacional</a> unRacional; <span class="comment">/* = malloc(sizeof(TRacional));*/</span>
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060    printf(<span class="stringliteral">"Introduzca el numerador: "</span>);
+<a name="l00061"></a>00061    scanf(<span class="stringliteral">"%d%*c"</span>, &amp;unRacional.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>);
+<a name="l00062"></a>00062    printf(<span class="stringliteral">"Introduzca el denominador: "</span>);
+<a name="l00063"></a>00063    scanf(<span class="stringliteral">"%d%*c"</span>, &amp;unRacional.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>);
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065    <span class="keywordflow">return</span> unRacional;
+<a name="l00066"></a>00066 }
+<a name="l00067"></a>00067 
+<a name="l00068"></a><a class="code" href="estadis_8h.html#8d2976d7f8567afd39d0f3d7d5f73db7">00068</a> <span class="keywordtype">void</span> <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> unRacional) {
+<a name="l00069"></a>00069    printf(<span class="stringliteral">"%f/%f\n"</span>,unRacional.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>,unRacional.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>);
+<a name="l00070"></a>00070 }
+<a name="l00071"></a>00071 
+<a name="l00072"></a><a class="code" href="estadis_8h.html#7269ab15bcd21aebf16af724de79330e">00072</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#7269ab15bcd21aebf16af724de79330e">sumaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> sumando1,<a class="code" href="struct_t_racional.html">TRacional</a> sumando2) {
+<a name="l00073"></a>00073    <a class="code" href="struct_t_racional.html">TRacional</a> resultado;
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075    <span class="keywordflow">if</span>(sumando1.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>==sumando2.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>) {
+<a name="l00076"></a>00076       resultado.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>=sumando1.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>+sumando2.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>;
+<a name="l00077"></a>00077       resultado.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>=sumando1.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>;
+<a name="l00078"></a>00078    } <span class="keywordflow">else</span> {
+<a name="l00079"></a>00079       resultado.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>=sumando1.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>*sumando2.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>;
+<a name="l00080"></a>00080       resultado.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>=sumando1.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>*(resultado.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>/sumando1.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>)+
+<a name="l00081"></a>00081         sumando2.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>*(resultado.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>/sumando2.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>);
+<a name="l00082"></a>00082    }
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084    <span class="keywordflow">return</span> resultado;
+<a name="l00085"></a>00085 }
+<a name="l00086"></a>00086 
+<a name="l00087"></a><a class="code" href="estadis_8c.html#e8f890e2a27ab92a4290649ee1dfe0c8">00087</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#e8f890e2a27ab92a4290649ee1dfe0c8">simplificaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> unRacional) {
+<a name="l00088"></a>00088    <span class="keywordtype">double</span> divisor=<a class="code" href="estadis_8c.html#2931429a493d5c0feca19b04a99e7f55">mcd</a>(unRacional.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>,unRacional.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>);
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090    unRacional.<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>/=divisor;
+<a name="l00091"></a>00091    unRacional.<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>/=divisor;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093    <span class="keywordflow">return</span> unRacional;
+<a name="l00094"></a>00094 }
+<a name="l00095"></a>00095 
+<a name="l00096"></a><a class="code" href="estadis_8h.html#61f022690828811867220b6d422d2e4c">00096</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#61f022690828811867220b6d422d2e4c">restaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> minuendo,<a class="code" href="struct_t_racional.html">TRacional</a> sustraendo) {
+<a name="l00097"></a>00097 }
+<a name="l00098"></a>00098 
+<a name="l00099"></a><a class="code" href="estadis_8h.html#bf7e2658eea4b608158654be7362d742">00099</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#bf7e2658eea4b608158654be7362d742">multiplicaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> factor1,<a class="code" href="struct_t_racional.html">TRacional</a> factor2) {
+<a name="l00100"></a>00100 }
+<a name="l00101"></a>00101 
+<a name="l00102"></a><a class="code" href="estadis_8h.html#acbdf518d5a69a197b3e71e61c6b820d">00102</a> <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#acbdf518d5a69a197b3e71e61c6b820d">divideRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> dividendo,<a class="code" href="struct_t_racional.html">TRacional</a> divisor) {
+<a name="l00103"></a>00103 }
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 
+<a name="l00106"></a><a class="code" href="estadis_8c.html#0ddf1224851353fc92bfbff6f499fa97">00106</a> <span class="keywordtype">int</span> <a class="code" href="estadis_8c.html#0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])
+<a name="l00107"></a>00107 {
+<a name="l00108"></a>00108   <span class="keywordtype">boolean</span> ordenado=<span class="keyword">false</span>;
+<a name="l00109"></a>00109   <span class="keywordtype">long</span> base, exponente;
+<a name="l00110"></a>00110   <a class="code" href="struct_t_racional.html">TRacional</a> unRacional, otroRacional;
+<a name="l00111"></a>00111   <a class="code" href="struct_t_racional.html">TRacional</a> terminos[100];
+<a name="l00112"></a>00112   <span class="keywordtype">int</span> i;
+<a name="l00113"></a>00113   <a class="code" href="struct_t_racional.html">TRacional</a> suma;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115   <span class="keywordflow">for</span>(i=0;i&lt;100;i++) {
+<a name="l00116"></a>00116      printf(<span class="stringliteral">"%d ---&gt; "</span>,i);
+<a name="l00117"></a>00117      terminos[i].<a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">numerador</a>=i+2;
+<a name="l00118"></a>00118      terminos[i].<a class="code" href="struct_t_racional.html#1bff981416af845f8220b9abaf8b25b0">denominador</a>=(i+1)*(i+1);
+<a name="l00119"></a>00119      terminos[i]=<a class="code" href="estadis_8c.html#e8f890e2a27ab92a4290649ee1dfe0c8">simplificaRacional</a>(terminos[i]);
+<a name="l00120"></a>00120      <span class="keywordflow">if</span>(i==0)
+<a name="l00121"></a>00121        suma=terminos[i];
+<a name="l00122"></a>00122      <span class="keywordflow">else</span>
+<a name="l00123"></a>00123        suma=<a class="code" href="estadis_8c.html#e8f890e2a27ab92a4290649ee1dfe0c8">simplificaRacional</a>(<a class="code" href="estadis_8c.html#7269ab15bcd21aebf16af724de79330e">sumaRacional</a>(suma,terminos[i]));
+<a name="l00124"></a>00124      <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(terminos[i]);
+<a name="l00125"></a>00125      <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(suma);
+<a name="l00126"></a>00126      getc(stdin);
+<a name="l00127"></a>00127   }
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129   printf(<span class="stringliteral">"Suma de la serie: "</span>);
+<a name="l00130"></a>00130   <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(suma);
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132   <span class="comment">//system("cls");</span>
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134   printf(<span class="stringliteral">"%d"</span>,<a class="code" href="estadis_8c.html#2931429a493d5c0feca19b04a99e7f55">mcd</a>(81,72));
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136   unRacional=<a class="code" href="estadis_8c.html#c5d11897fc9dd5a98fd58fd5228350fd">leeRacional</a>();
+<a name="l00137"></a>00137   otroRacional=<a class="code" href="estadis_8c.html#c5d11897fc9dd5a98fd58fd5228350fd">leeRacional</a>();
+<a name="l00138"></a>00138   printf(<span class="stringliteral">"La suma de esos dos racionales es: "</span>);
+<a name="l00139"></a>00139   <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(<a class="code" href="estadis_8c.html#7269ab15bcd21aebf16af724de79330e">sumaRacional</a>(unRacional,otroRacional));
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141   printf(<span class="stringliteral">"Introduzca la base: "</span>);
+<a name="l00142"></a>00142   scanf(<span class="stringliteral">"%d%*c"</span>, &amp;base);
+<a name="l00143"></a>00143   printf(<span class="stringliteral">"Introduzca el exponente: "</span>);
+<a name="l00144"></a>00144   scanf(<span class="stringliteral">"%d%*c"</span>, &amp;exponente);
+<a name="l00145"></a>00145   printf(<span class="stringliteral">"%d"</span>, <a class="code" href="estadis_8c.html#3639a98907117d02a8b1b9ab65d9f19a">potencia</a>(base,exponente));
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147   getc(stdin);
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149   <span class="keywordflow">return</span> 0;
+<a name="l00150"></a>00150 }
+</pre></div><hr size="1"><address style="align: right;"><small>Generado el Sun May 21 17:03:01 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

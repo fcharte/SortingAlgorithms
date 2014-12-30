@@ -1,0 +1,1039 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: Referencia del Archivo D:/Ordena/Interfaz.c</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>Referencia del Archivo D:/Ordena/Interfaz.c</h1>Implementaci¢n de la interfaz de usuario. <a href="#_details">Más...</a>
+<p>
+<code>#include &lt;<a class="el" href="curses_8h-source.html">curses.h</a>&gt;</code><br>
+<code>#include &quot;<a class="el" href="_interfaz_8h-source.html">Interfaz.h</a>&quot;</code><br>
+
+<p>
+<a href="_interfaz_8c-source.html">Ir al código fuente de este archivo.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#0638ffd4e73d4d3d9bb6346285d9262b">CalculaRango</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula el rango de los valores la matriz.  <a href="#0638ffd4e73d4d3d9bb6346285d9262b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#94641aff6c4dee086e5596089ed68a4b">InicializaPantalla</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Prepara la interfaz de usuario del programa.  <a href="#94641aff6c4dee086e5596089ed68a4b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#75cebeaa86abcdd1964078b1b59fc0e6">Presentacion</a> (<a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *<a class="el" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>, int <a class="el" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Efectúa la presentación del programa.  <a href="#75cebeaa86abcdd1964078b1b59fc0e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#dfea4ed6f94518dd065f66267e687858">EnumeraAlgoritmos</a> (<a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *<a class="el" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>, int <a class="el" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite elegir los algoritmos a probar.  <a href="#dfea4ed6f94518dd065f66267e687858"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#3204c04a7acd62df4a2e91fa9636a9f0">MuestraVectoresaIntercambiar</a> (int i1, int i2, int v1, int v2)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destaca los vectores que van a ser intercambiados.  <a href="#3204c04a7acd62df4a2e91fa9636a9f0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#6137692c0c5116bfc8771d5c1b78ced2">MuestraNotificacion</a> (<a class="el" href="struct_t_estado.html">TEstado</a> *estado, int <a class="el" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Notificación de cambios en el vector.  <a href="#6137692c0c5116bfc8771d5c1b78ced2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#3c4e519b7c30df8b66ba7952787bcdd2">MuestraInicioAlgoritmo</a> (char *nombre)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Notifica del inicio de un algoritmo de ordenación.  <a href="#3c4e519b7c30df8b66ba7952787bcdd2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#afd5aa833ea06ec38037e9c38244ae6b">MuestraFinAlgoritmo</a> (<a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a> ordenado)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Notifica del fin de un algoritmo de ordenación.  <a href="#afd5aa833ea06ec38037e9c38244ae6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#4cc191166b3548d824f7dad7546c5f35">MuestraVector</a> (int *vector, int <a class="el" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Representa gráficamente el vector.  <a href="#4cc191166b3548d824f7dad7546c5f35"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#90c27790ac62e458da632aa1e2f7849f">MuestraResumen</a> (<a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *<a class="el" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>, <a class="el" href="struct_t_estado.html">TEstado</a> *estado, int <a class="el" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resumen los resultados de los algoritmos probados.  <a href="#90c27790ac62e458da632aa1e2f7849f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#83bc041ceb887acf230c054d2ce47cd6">FinInterfaz</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pone fin a la interfaz de usuario.  <a href="#83bc041ceb887acf230c054d2ce47cd6"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a> = 100</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct__win.html">WINDOW</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct__win.html">WINDOW</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+Implementaci¢n de la interfaz de usuario. 
+<p>
+<dl compact><dt><b>Versión:</b></dt><dd>1.0 </dd></dl>
+<dl compact><dt><b>Autor:</b></dt><dd>Francisco Charte Ojeda</dd></dl>
+Este m¢dulo implementa una interfaz de usuario basada en texto con ncurses, lo cual permite su compilaci¢n en distintos sistemas operativos obteniendo pr cticamente el mismo resultado. 
+<p>
+Definición en el archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.<hr><h2>Documentación de las funciones</h2>
+<a class="anchor" name="0638ffd4e73d4d3d9bb6346285d9262b"></a><!-- doxytag: member="Interfaz.c::CalculaRango" ref="0638ffd4e73d4d3d9bb6346285d9262b" args="()" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CalculaRango           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Calcula el rango de los valores la matriz. 
+<p>
+Ventana de comunicaci¢n de resultados 
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00020">20</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h.html#c2f22035276e0d4b82604de27d056fcd">LINES</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00021"></a>00021 {
+<a name="l00022"></a>00022    <span class="comment">// que depender  del n£mero de l¡neas disponibles en pantalla</span>
+<a name="l00023"></a>00023    <span class="keywordflow">return</span> (LINES-8);
+<a name="l00024"></a>00024 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="dfea4ed6f94518dd065f66267e687858"></a><!-- doxytag: member="Interfaz.c::EnumeraAlgoritmos" ref="dfea4ed6f94518dd065f66267e687858" args="(TAlgoritmo *algoritmos, int nAlgoritmos)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a> EnumeraAlgoritmos           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>algoritmos</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nAlgoritmos</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Permite elegir los algoritmos a probar. 
+<p>
+Esta función es invocada al inicio de cada ciclo de prueba de algoritmos, siendo la encargada de mostrar al usuario los que hay disponibles y darle a elegir aquellos que quiere probar. También debe dar la posibilidad de terminar el programa y salir. La interfaz por defecto utiliza ncurses para que el usuario se desplace con las teclas de cursor y vaya marcando y desmarcando algoritmos. Hecha la selección, la función debe devolver el control al programa principal.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>algoritmos</em>&nbsp;</td><td>Vector con los algoritmos disponibles </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nAlgoritmos</em>&nbsp;</td><td>Entero indicando el número de elementos del vector </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>Un valor <em>boolean</em> indicando si la aplicación debe terminar o no </dd></dl>
+<dl compact><dt><b>Precondición:</b></dt><dd>La función debe ser cada de mostrar los <em>nAlgoritmos</em> y dar a elegir al usuario, ya sea mediante teclado o ratón <p>
+La función tiene que ofrecer una opción para terminar </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>Si se elige la opción de finalización la función debe devolver <em>verdad</em>, retornando <em>falso</em> en caso contrario <p>
+La función debe dar el valor <em>verdad</em> al campo <em>elegido</em> de cada algoritmo elegido por el usuario, ya que éste es el mecanismo que permitirá al programa principal saber qué algoritmos debe ejecutar </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00110">110</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01050">A_BOLD</a>, <a class="el" href="_principal_8c-source.html#l00050">algoritmos</a>, <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="_interfaz_8h-source.html#l00025">EscribeCentrado</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h-source.html#l02069">wclear</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>, y <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00111"></a>00111 {
+<a name="l00112"></a>00112    <span class="keywordtype">int</span> i, tecla;
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114    <span class="comment">// Mostraremos la lista de algoritmos en la ventana superior</span>
+<a name="l00115"></a>00115    <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00116"></a>00116    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00117"></a>00117    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00118"></a>00118    <a class="code" href="_interfaz_8h.html#92a42d690211f3b78307271329617f57">EscribeCentrado</a>(0,<span class="stringliteral">"Algoritmos de ordenaci¢n disponibles"</span>);
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120    <span class="comment">// Tres columnas con los nombres de los algoritmos y un ¡ndice entre corchetes</span>
+<a name="l00121"></a>00121    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>;i++) {
+<a name="l00122"></a>00122       <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,3+i/3,5+25*(i%3));
+<a name="l00123"></a>00123       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>, <span class="stringliteral">"[%d] %s"</span>,i,<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].nombre);
+<a name="l00124"></a>00124    }
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126    <span class="comment">// M s instrucciones</span>
+<a name="l00127"></a>00127    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"\n\nUtiliza las teclas de desplazamiento del cursor y "</span>);
+<a name="l00128"></a>00128    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"la barra espaciadora  para elegir los algoritmos que "</span>);
+<a name="l00129"></a>00129    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"quieres analizar. Pulsa INTRO para comenzar el proceso "</span>);
+<a name="l00130"></a>00130    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"o ESC para terminar"</span>);
+<a name="l00131"></a>00131    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133    i=0; <span class="comment">// Öndice del algoritmo seleccionado</span>
+<a name="l00134"></a>00134    <span class="keywordflow">do</span> {
+<a name="l00135"></a>00135       <span class="comment">// Situar el cursor en el lugar adecuado</span>
+<a name="l00136"></a>00136       <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,3+i/3,6+25*(i%3));
+<a name="l00137"></a>00137       <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00138"></a>00138       tecla=<a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>); <span class="comment">// y esperar al usuario</span>
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140       <span class="comment">// seg£n la tecla que se haya pulsado</span>
+<a name="l00141"></a>00141       <span class="keywordflow">switch</span>(tecla) {
+<a name="l00142"></a>00142         <span class="keywordflow">case</span> 32: <span class="comment">// la barra espaciado marca/desmarca el algoritmo actual</span>
+<a name="l00143"></a>00143           <a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].<a class="code" href="struct_t_algoritmo.html#7281cc1d25d98a0ea3224cc602422bba">elegido</a>=!<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].<a class="code" href="struct_t_algoritmo.html#7281cc1d25d98a0ea3224cc602422bba">elegido</a>;
+<a name="l00144"></a>00144           <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].elegido?<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(3):<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00145"></a>00145           <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00146"></a>00146           <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"%d"</span>,i);
+<a name="l00147"></a>00147           <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00148"></a>00148           <span class="keywordflow">break</span>;
+<a name="l00149"></a>00149         <span class="keywordflow">case</span> <a class="code" href="curses_8h.html#fa086fc916a81e7fd348ec00cf786916">KEY_UP</a>: <span class="comment">// desplazamiento hacia arriba</span>
+<a name="l00150"></a>00150           i=i&gt;2?i-3:i;
+<a name="l00151"></a>00151           <span class="keywordflow">break</span>;
+<a name="l00152"></a>00152         <span class="keywordflow">case</span> <a class="code" href="curses_8h.html#203163bc0189184a1de6ca8d1e53c6bf">KEY_DOWN</a>: <span class="comment">// desplazamiento hacia abajo</span>
+<a name="l00153"></a>00153           i=i&lt;nAlgoritmos-3?i+3:i;
+<a name="l00154"></a>00154           <span class="keywordflow">break</span>;
+<a name="l00155"></a>00155         <span class="keywordflow">case</span> <a class="code" href="curses_8h.html#f4d1b8a2912354646c74cf36c69f8223">KEY_LEFT</a>: <span class="comment">// desplazamiento hacia la izquierda</span>
+<a name="l00156"></a>00156           i=i?i-1:i;
+<a name="l00157"></a>00157           <span class="keywordflow">break</span>;
+<a name="l00158"></a>00158         <span class="keywordflow">case</span> <a class="code" href="curses_8h.html#004194639b9ad76cea01d9e93716d4d6">KEY_RIGHT</a>: <span class="comment">// desplazamiento hacia la derecha</span>
+<a name="l00159"></a>00159           i=i&lt;nAlgoritmos-1?i+1:i;
+<a name="l00160"></a>00160           <span class="keywordflow">break</span>;
+<a name="l00161"></a>00161       }
+<a name="l00162"></a>00162       <span class="comment">// hasta que se pulse ESC o INTRO</span>
+<a name="l00163"></a>00163    } <span class="keywordflow">while</span>(tecla!=27&amp;&amp;tecla!=10&amp;&amp;tecla!=13);
+<a name="l00164"></a>00164 
+<a name="l00165"></a>00165    <span class="keywordflow">if</span>(tecla!=27) { <span class="comment">// Si no se ha pulsado ESC</span>
+<a name="l00166"></a>00166       <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,3,3);
+<a name="l00167"></a>00167       <span class="comment">// m s instrucciones</span>
+<a name="l00168"></a>00168       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>, <span class="stringliteral">"A continuaci¢n se utilizar  esta ventana para "</span>);
+<a name="l00169"></a>00169       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"representar gr ficamente los elementos que van "</span>);
+<a name="l00170"></a>00170       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"orden ndose en un vector de enteros generado "</span>);
+<a name="l00171"></a>00171       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"aleatoriamente, mientras en la ventana inferior "</span>);
+<a name="l00172"></a>00172       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"se facilita informaci¢n sobre el proceso. En "</span>);
+<a name="l00173"></a>00173       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"cualquier momento puedes usar la tecla ESC para "</span>);
+<a name="l00174"></a>00174       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"detener el algoritmo en curso y pasar al siguiente."</span>);
+<a name="l00175"></a>00175       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>, <span class="stringliteral">"\n\nPulsa una tecla para comenzar ..."</span>);
+<a name="l00176"></a>00176       <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00177"></a>00177       <a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00178"></a>00178       <span class="keywordflow">return</span> <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>;
+<a name="l00179"></a>00179    } <span class="keywordflow">else</span>
+<a name="l00180"></a>00180      <span class="keywordflow">return</span> <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>; <span class="comment">// Si se ha pulsado ESC lo notificamos para terminar</span>
+<a name="l00181"></a>00181 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="83bc041ceb887acf230c054d2ce47cd6"></a><!-- doxytag: member="Interfaz.c::FinInterfaz" ref="83bc041ceb887acf230c054d2ce47cd6" args="()" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void FinInterfaz           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Pone fin a la interfaz de usuario. 
+<p>
+El programa principal invoca a esta función para dar oportunidad a que la interfaz se cierre apropiadamente.<p>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00358">358</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h.html#4b0c3d374d183e7399a86fe841e50b28">endwin()</a>.<div class="fragment"><pre class="fragment"><a name="l00359"></a>00359 {
+<a name="l00360"></a>00360    <a class="code" href="curses_8h.html#4b0c3d374d183e7399a86fe841e50b28">endwin</a>(); <span class="comment">// Fin de ncurses</span>
+<a name="l00361"></a>00361 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="94641aff6c4dee086e5596089ed68a4b"></a><!-- doxytag: member="Interfaz.c::InicializaPantalla" ref="94641aff6c4dee086e5596089ed68a4b" args="()" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int InicializaPantalla           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Prepara la interfaz de usuario del programa. 
+<p>
+Esta función es la responsable de preparar la interfaz de usuario que va a ofrecer el programa. Por defecto, la aplicación inicializa ncurses y define las ventanas que van a utilizarse, una para mostrar el proceso y otra que actúa como consola.<p>
+<dl compact><dt><b>Devuelve:</b></dt><dd>El máximo número de elementos que puede representar en pantalla </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>La función debe evaluar, según la representación que vaya a efectuar, cuántos elementos puede representar y devolver ese número como resultado. El núcleo del programa creará el vector a ordenar con ese número exacto de elementos. </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00027">27</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01050">A_BOLD</a>, <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#501d833d181ad18f6ce61fef519a4ca0">COLS</a>, <a class="el" href="curses_8h.html#0e6c0da339279557693cb985c6b09b06">delwin()</a>, <a class="el" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair()</a>, <a class="el" href="curses_8h.html#b1dfb346ad3016775242288a3fc068d0">initscr()</a>, <a class="el" href="curses_8h-source.html#l02007">keypad</a>, <a class="el" href="curses_8h.html#c2f22035276e0d4b82604de27d056fcd">LINES</a>, <a class="el" href="_principal_8c-source.html#l00061">nElementos</a>, <a class="el" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin()</a>, <a class="el" href="curses_8h-source.html#l02086">nodelay</a>, <a class="el" href="curses_8h-source.html#l02084">noecho</a>, <a class="el" href="curses_8h.html#3a668227f5bfb8ec1c8ed1670e4a2656">raw()</a>, <a class="el" href="curses_8h.html#854e9afbee1d21b9ff9da9e45b3770ce">start_color()</a>, <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h.html#6913aaf5484837df131f1d19ef5f7bc2">wbkgdset()</a>, <a class="el" href="curses_8h.html#eea5eff9c0592e00471ceb3a85baab75">wborder()</a>, <a class="el" href="curses_8h-source.html#l02069">wclear</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wConsola</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>, y <a class="el" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00028"></a>00028 {
+<a name="l00029"></a>00029    <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>; <span class="comment">/* N£mero de elementos que pueden representarse en pantalla */</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031    <span class="comment">/* Inicializaci¢n de ncurses */</span>
+<a name="l00032"></a>00032    <a class="code" href="curses_8h.html#b1dfb346ad3016775242288a3fc068d0">initscr</a>();
+<a name="l00033"></a>00033    <a class="code" href="curses_8h.html#3a668227f5bfb8ec1c8ed1670e4a2656">raw</a>();
+<a name="l00034"></a>00034    <a class="code" href="curses_8h.html#7ab741f03f4d92419b050cb02b5cc11e">noecho</a>();
+<a name="l00035"></a>00035    <a class="code" href="curses_8h.html#854e9afbee1d21b9ff9da9e45b3770ce">start_color</a>();
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037    <span class="comment">/* Configuraci¢n de las parejas de colores que van a utilizarse */</span>
+<a name="l00038"></a>00038    <a class="code" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair</a>(1,COLOR_WHITE,COLOR_BLUE);
+<a name="l00039"></a>00039    <a class="code" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair</a>(2,COLOR_YELLOW,COLOR_BLUE);
+<a name="l00040"></a>00040    <a class="code" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair</a>(3,COLOR_BLUE,COLOR_WHITE);
+<a name="l00041"></a>00041    <a class="code" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair</a>(4,COLOR_RED,COLOR_BLUE);
+<a name="l00042"></a>00042    <a class="code" href="curses_8h.html#f6d706a9a5a2fc3cfb8467bbed0b4c28">init_pair</a>(5,COLOR_GREEN,COLOR_BLUE);
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044    <span class="comment">/* Se podr n representar tantos elementos como columnas haya menos 2 */</span>
+<a name="l00045"></a>00045    nElementos=<a class="code" href="curses_8h.html#501d833d181ad18f6ce61fef519a4ca0">COLS</a>-2;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047    <span class="comment">/* Preparaci¢n del borde y colores de la ventana inferior, que actuar </span>
+<a name="l00048"></a>00048 <span class="comment">     como consola */</span>
+<a name="l00049"></a>00049    <a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>=<a class="code" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin</a>(6, COLS, LINES-6,0);
+<a name="l00050"></a>00050    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(1));
+<a name="l00051"></a>00051    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00052"></a>00052    <a class="code" href="curses_8h.html#eea5eff9c0592e00471ceb3a85baab75">wborder</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>, 0, 0, 0, 0, 0, 0, 0, 0);
+<a name="l00053"></a>00053    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00054"></a>00054    <a class="code" href="curses_8h.html#0e6c0da339279557693cb985c6b09b06">delwin</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00055"></a>00055    <a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>=<a class="code" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin</a>(4, COLS-2, LINES-5,1);
+<a name="l00056"></a>00056    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(1));
+<a name="l00057"></a>00057    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00058"></a>00058    <a class="code" href="curses_8h.html#6913aaf5484837df131f1d19ef5f7bc2">wbkgdset</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(1));
+<a name="l00059"></a>00059    <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061    <span class="comment">/* Preparaci¢n del borde y colores de la ventana superior, en la que</span>
+<a name="l00062"></a>00062 <span class="comment">      se representar  el proceso de ordenaci¢n */</span>
+<a name="l00063"></a>00063    <a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>=<a class="code" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin</a>(LINES-6,COLS,0,0);
+<a name="l00064"></a>00064    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00065"></a>00065    <a class="code" href="curses_8h.html#eea5eff9c0592e00471ceb3a85baab75">wborder</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>, 0, 0, 0, 0, 0, 0, 0, 0);
+<a name="l00066"></a>00066    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00067"></a>00067    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00068"></a>00068    <a class="code" href="curses_8h.html#0e6c0da339279557693cb985c6b09b06">delwin</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00069"></a>00069    <a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>=<a class="code" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin</a>(LINES-8,COLS-2,1,1);
+<a name="l00070"></a>00070    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00071"></a>00071    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00072"></a>00072    <a class="code" href="curses_8h.html#6913aaf5484837df131f1d19ef5f7bc2">wbkgdset</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00073"></a>00073    <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00074"></a>00074    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00075"></a>00075    <a class="code" href="curses_8h.html#db4fc677a40607fe97b39f4faddaa6f2">nodelay</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>);
+<a name="l00076"></a>00076    <a class="code" href="curses_8h.html#e814ef524f7e65efb7156223441200f0">keypad</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>);
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078    <span class="keywordflow">return</span> nElementos;  <span class="comment">/* Devolvemos el n£mero de elementos a representar */</span>
+<a name="l00079"></a>00079 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="afd5aa833ea06ec38037e9c38244ae6b"></a><!-- doxytag: member="Interfaz.c::MuestraFinAlgoritmo" ref="afd5aa833ea06ec38037e9c38244ae6b" args="(boolean ordenado)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void MuestraFinAlgoritmo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>ordenado</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Notifica del fin de un algoritmo de ordenación. 
+<p>
+Cada vez que se termina la ejecución de un algoritmo de ordenación, el programa principal invoca a esta función indicándole si el orden final de los elementos ha sido correcto o no.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ordenado</em>&nbsp;</td><td>Indica si el vector ha quedado bien ordenado </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+<dl compact><dt><b>Precondición:</b></dt><dd>Que el valor recibido por esta función sea <em>falso</em> puede indicar dos circunstancias diferentes: que el algoritmo probado no funcione adecuadamente, y el vector no haya quedado bien ordenado, o bien que el proceso haya sido interrumpido al devolver <em>verdad</em> la función <em>MuestraNotificacion</em> de la propiedad interfaz, en cuyo caso no puede saber si el algoritmo funciona o no </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00284">284</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wConsola</a>, <a class="el" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch()</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, y <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00285"></a>00285 {
+<a name="l00286"></a>00286     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,3,60);
+<a name="l00287"></a>00287     <span class="comment">// dependiendo de que los elementos est‚n ordenados o no</span>
+<a name="l00288"></a>00288     <span class="keywordflow">if</span>(ordenado) {
+<a name="l00289"></a>00289       <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00290"></a>00290       <span class="comment">// indicamos simplemente que se ha terminado</span>
+<a name="l00291"></a>00291       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola,<span class="stringliteral">"*** TERMINADO ***"</span>);
+<a name="l00292"></a>00292     } <span class="keywordflow">else</span> {
+<a name="l00293"></a>00293       <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(4));
+<a name="l00294"></a>00294       <span class="comment">// o que hay un error en la ordenaci¢n</span>
+<a name="l00295"></a>00295       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<span class="stringliteral">"*** ERROR ***"</span>);
+<a name="l00296"></a>00296     }
+<a name="l00297"></a>00297     <a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00298"></a>00298 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="3c4e519b7c30df8b66ba7952787bcdd2"></a><!-- doxytag: member="Interfaz.c::MuestraInicioAlgoritmo" ref="3c4e519b7c30df8b66ba7952787bcdd2" args="(char *nombre)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void MuestraInicioAlgoritmo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nombre</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Notifica del inicio de un algoritmo de ordenación. 
+<p>
+Cada vez que va a iniciarse la ordenación del vector mediante un algoritmo de los elegidos, el programa principal invoca a esta función facilitándole el nombre del algoritmo. La interfaz puede utilizar ese dato como convenga. Por defecto se usa para mostrarlo en la consola, la ventana de la parte inferior de la pantalla.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nombre</em>&nbsp;</td><td>Nombre descriptivo del algoritmo de ordenación </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00259">259</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01050">A_BOLD</a>, <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#36b51d1fb60460a5a35b5fd42f2ebc98">wattroff()</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h-source.html#l02069">wclear</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wConsola</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>, y <a class="el" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00260"></a>00260 {
+<a name="l00261"></a>00261     <span class="comment">// Preparamos la consola con las indicaciones apropiadas */</span>
+<a name="l00262"></a>00262     <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(1));
+<a name="l00263"></a>00263     <a class="code" href="curses_8h.html#36b51d1fb60460a5a35b5fd42f2ebc98">wattroff</a>(wConsola,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00264"></a>00264     <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(wConsola);
+<a name="l00265"></a>00265     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,0,60);
+<a name="l00266"></a>00266     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola, <span class="stringliteral">"+ m s r pido"</span>);
+<a name="l00267"></a>00267     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,1,60);
+<a name="l00268"></a>00268     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola, <span class="stringliteral">"- m s lento"</span>);
+<a name="l00269"></a>00269     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,2,60);
+<a name="l00270"></a>00270     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola, <span class="stringliteral">"ESC detener"</span>);
+<a name="l00271"></a>00271     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,0,5);
+<a name="l00272"></a>00272     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola,<span class="stringliteral">"Algoritmo"</span>);
+<a name="l00273"></a>00273     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,0,25);
+<a name="l00274"></a>00274     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola,<span class="stringliteral">"Operaciones"</span>);
+<a name="l00275"></a>00275     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,0,40);
+<a name="l00276"></a>00276     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola,<span class="stringliteral">"Intercambios"</span>);
+<a name="l00277"></a>00277     <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(wConsola,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00278"></a>00278     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wConsola,2,5);
+<a name="l00279"></a>00279     <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wConsola,nombre);
+<a name="l00280"></a>00280     <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(wConsola);
+<a name="l00281"></a>00281 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="6137692c0c5116bfc8771d5c1b78ced2"></a><!-- doxytag: member="Interfaz.c::MuestraNotificacion" ref="6137692c0c5116bfc8771d5c1b78ced2" args="(TEstado *estado, int nElementos)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a> MuestraNotificacion           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="struct_t_estado.html">TEstado</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nElementos</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Notificación de cambios en el vector. 
+<p>
+Cada vez que el algoritmo de ordenación que está ejecutándose intercambia dos elementos del vector, llama a una función de notificación en el programa principal. Esa función invocará a ésta entregándole como argumentos la estructura <a class="el" href="struct_t_estado.html">TEstado</a> y el número de elementos del vector. La interfaz puede proceder según convenga, por defecto se vuelve a mostrar el vector de elementos mediante la función MuestraVector. Lo más importante es que esta función debe detectar si el usuario quiere cancelar la ejecución, devolviendo <em>verdad</em> en caso de que así sea.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>estado</em>&nbsp;</td><td>Puntero a la estructura <a class="el" href="struct_t_estado.html">TEstado</a> del proceso de ordenación que está ejecutándose </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nElementos</em>&nbsp;</td><td>Número de elementos que contiene el vector </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>Un valor de tipo <em>boolean</em> indicando si debe interrumpirse el proceso </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>El núcleo del programa no introduce retardo alguno en el proceso de ordenación, siendo ésta tarea de la interfaz. Esta función puede ser el lugar más adecuado para establecer ese retardo de manera adecuada. </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00222">222</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h.html#90af027a80a4c8419d57e8cfcb3a26bb">delay_output()</a>, <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>, <a class="el" href="_definiciones_8h-source.html#l00034">TEstado::nIntercambios</a>, <a class="el" href="_definiciones_8h-source.html#l00033">TEstado::nOperaciones</a>, <a class="el" href="_interfaz_8c-source.html#l00015">retardo</a>, <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wConsola</a>, <a class="el" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch()</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>, y <a class="el" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00069">Notifica()</a>.<div class="fragment"><pre class="fragment"><a name="l00223"></a>00223 {
+<a name="l00224"></a>00224   <span class="keywordtype">int</span> tecla;
+<a name="l00225"></a>00225   <span class="keywordtype">boolean</span> retorno=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>; <span class="comment">// Indicaci¢n de que hay que interrumpir</span>
+<a name="l00226"></a>00226 
+<a name="l00227"></a>00227   <span class="comment">// Establecemos el retardo</span>
+<a name="l00228"></a>00228   <a class="code" href="curses_8h.html#90af027a80a4c8419d57e8cfcb3a26bb">delay_output</a>(<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>);
+<a name="l00229"></a>00229   <span class="comment">// y comprobamos si hay alguna pulsaci¢n de tecla</span>
+<a name="l00230"></a>00230   tecla=<a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00231"></a>00231 
+<a name="l00232"></a>00232   <span class="keywordflow">switch</span>(tecla) { <span class="comment">// dependiendo de la tecla pulsada</span>
+<a name="l00233"></a>00233     <span class="keywordflow">case</span> 27:
+<a name="l00234"></a>00234          retorno=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>; <span class="comment">// interrumpimos el algoritmo</span>
+<a name="l00235"></a>00235          <span class="keywordflow">break</span>;
+<a name="l00236"></a>00236     <span class="keywordflow">case</span> <span class="charliteral">'-'</span>:
+<a name="l00237"></a>00237          <span class="comment">// incrementamos el retardo</span>
+<a name="l00238"></a>00238          <a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>=<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>&lt;1000?<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>+10:<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>;
+<a name="l00239"></a>00239          <span class="keywordflow">break</span>;
+<a name="l00240"></a>00240     <span class="keywordflow">case</span> <span class="charliteral">'+'</span>:
+<a name="l00241"></a>00241          <span class="comment">// o lo reducimos</span>
+<a name="l00242"></a>00242          <a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>=<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>&gt;10?<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>-10:<a class="code" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a>;
+<a name="l00243"></a>00243          <span class="keywordflow">break</span>;
+<a name="l00244"></a>00244   }
+<a name="l00245"></a>00245 
+<a name="l00246"></a>00246   estado-&gt;<a class="code" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">nIntercambios</a>++; <span class="comment">// Incrementar el n£mero de intercambios</span>
+<a name="l00247"></a>00247 
+<a name="l00248"></a>00248   <span class="comment">// y mostrar la informaci¢n de c¢mo va el proceso en la consola</span>
+<a name="l00249"></a>00249   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,2,25);
+<a name="l00250"></a>00250   <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>, <span class="stringliteral">"%7d"</span>,estado-&gt;<a class="code" href="struct_t_estado.html#e0221a0625168b69438db0f538583507">nOperaciones</a>);
+<a name="l00251"></a>00251   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>,2,40);
+<a name="l00252"></a>00252   <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>, <span class="stringliteral">"%7d"</span>,estado-&gt;<a class="code" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">nIntercambios</a>);
+<a name="l00253"></a>00253   <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00254"></a>00254 
+<a name="l00255"></a>00255   <span class="keywordflow">return</span> retorno;
+<a name="l00256"></a>00256 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="90c27790ac62e458da632aa1e2f7849f"></a><!-- doxytag: member="Interfaz.c::MuestraResumen" ref="90c27790ac62e458da632aa1e2f7849f" args="(TAlgoritmo *algoritmos, TEstado *estado, int nAlgoritmos)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void MuestraResumen           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>algoritmos</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap><a class="el" href="struct_t_estado.html">TEstado</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nAlgoritmos</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Resumen los resultados de los algoritmos probados. 
+<p>
+Cuando se termina la prueba de la lista de algoritmos seleccionados, se invoca a esta función para que muestre los resultados al usuario.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>algoritmos</em>&nbsp;</td><td>Vector con los algoritmos existentes </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>estado</em>&nbsp;</td><td>Vector con las estructuras <a class="el" href="struct_t_estado.html">TEstado</a> que contienen los resultados </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nAlgoritmos</em>&nbsp;</td><td>Número de algoritmos registrados </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+<dl compact><dt><b>Precondición:</b></dt><dd>Al invocar a esta función, la estructura <a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> que representa a cada algoritmo tendrá el campo <em>elegido</em> a <em>verdad</em> o a <em>falso</em>, dato que debe utilizarse para saber qué algoritmos se han ejecutado. </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>La función es responsable de poner a <em>falso</em> el campo <em>elegido</em> de cada algoritmo una vez que ya no le sea útil y, en cualquier caso, antes de de devolver el control al programa principal. </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00319">319</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01050">A_BOLD</a>, <a class="el" href="_principal_8c-source.html#l00050">algoritmos</a>, <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#501d833d181ad18f6ce61fef519a4ca0">COLS</a>, <a class="el" href="_definiciones_8h-source.html#l00071">TAlgoritmo::elegido</a>, <a class="el" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>, <a class="el" href="curses_8h.html#c2f22035276e0d4b82604de27d056fcd">LINES</a>, <a class="el" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin()</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h.html#6913aaf5484837df131f1d19ef5f7bc2">wbkgdset()</a>, <a class="el" href="curses_8h.html#eea5eff9c0592e00471ceb3a85baab75">wborder()</a>, <a class="el" href="curses_8h-source.html#l02069">wclear</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, y <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00320"></a>00320 {
+<a name="l00321"></a>00321    <span class="keywordtype">int</span> lineas=0,i;
+<a name="l00322"></a>00322 
+<a name="l00323"></a>00323    <a class="code" href="struct__win.html">WINDOW</a> *wResumen;  <span class="comment">// En una ventana temporal</span>
+<a name="l00324"></a>00324 
+<a name="l00325"></a>00325    <span class="comment">// Contamos el número de algoritmos probados</span>
+<a name="l00326"></a>00326    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>;i++)
+<a name="l00327"></a>00327      <span class="keywordflow">if</span>(<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].elegido)
+<a name="l00328"></a>00328         lineas++;
+<a name="l00329"></a>00329 
+<a name="l00330"></a>00330    <span class="comment">/* y creamos una ventana con el tamaño adecuado para informar sobre ellos,</span>
+<a name="l00331"></a>00331 <span class="comment">     centrándola en la pantalla */</span>
+<a name="l00332"></a>00332    wResumen=<a class="code" href="curses_8h.html#b3f5df7fe9a2c0d16dc9f81c52a4a446">newwin</a>(lineas+5, 50, (LINES-(lineas+4))/2,(COLS-50)/2);
+<a name="l00333"></a>00333    <a class="code" href="curses_8h.html#6913aaf5484837df131f1d19ef5f7bc2">wbkgdset</a>(wResumen,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(3));
+<a name="l00334"></a>00334    <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(wResumen);
+<a name="l00335"></a>00335    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(wResumen,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(3));
+<a name="l00336"></a>00336    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(wResumen,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00337"></a>00337    <a class="code" href="curses_8h.html#eea5eff9c0592e00471ceb3a85baab75">wborder</a>(wResumen, 0, 0, 0, 0, 0, 0, 0, 0);
+<a name="l00338"></a>00338    <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wResumen,1,2);
+<a name="l00339"></a>00339    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wResumen,<span class="stringliteral">"%-20s %11s  %12s"</span>,<span class="stringliteral">"Algoritmo"</span>,<span class="stringliteral">"Operaciones"</span>,<span class="stringliteral">"Intercambios"</span>);
+<a name="l00340"></a>00340 
+<a name="l00341"></a>00341    lineas=3; <span class="comment">// Comenzaremos en la línea 3</span>
+<a name="l00342"></a>00342    <span class="keywordflow">for</span>(i=0;i&lt;nAlgoritmos;i++)
+<a name="l00343"></a>00343      <span class="keywordflow">if</span>(<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].elegido) {
+<a name="l00344"></a>00344        <span class="comment">// mostrando los resultados de cada algoritmo ejecutado</span>
+<a name="l00345"></a>00345        <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(wResumen,lineas++,2);
+<a name="l00346"></a>00346        <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(wResumen,<span class="stringliteral">"%-20s %11d  %12d"</span>,
+<a name="l00347"></a>00347         <a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].nombre,estado[i].nOperaciones,estado[i].nIntercambios);
+<a name="l00348"></a>00348        <a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].<a class="code" href="struct_t_algoritmo.html#7281cc1d25d98a0ea3224cc602422bba">elegido</a>=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>;
+<a name="l00349"></a>00349 
+<a name="l00350"></a>00350      }
+<a name="l00351"></a>00351 
+<a name="l00352"></a>00352    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(wResumen);
+<a name="l00353"></a>00353    <a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>); <span class="comment">// esperamos una tecla</span>
+<a name="l00354"></a>00354    <a class="code" href="curses_8h.html#0e6c0da339279557693cb985c6b09b06">delwin</a>(wResumen); <span class="comment">// y eliminamos la ventana</span>
+<a name="l00355"></a>00355  }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="4cc191166b3548d824f7dad7546c5f35"></a><!-- doxytag: member="Interfaz.c::MuestraVector" ref="4cc191166b3548d824f7dad7546c5f35" args="(int *vector, int nElementos)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void MuestraVector           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int *&nbsp;</td>
+          <td class="mdname" nowrap> <em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nElementos</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Representa gráficamente el vector. 
+<p>
+Esta función debe mostrar en la interfaz el contenido del vector de elementos que se están ordenando. El núcleo del programa invoca a esta función cuando va a iniciarse la prueba de un algoritmo de ordenación. Internamente, el código que gestiona la interfaz también lo llamada cada vez que se notifica un cambio.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vector</em>&nbsp;</td><td>Vector con los números que están ordenándos </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nElementos</em>&nbsp;</td><td>Número de elementos que contiene el vector </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00301">301</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01050">A_BOLD</a>, <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#c2f22035276e0d4b82604de27d056fcd">LINES</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h-source.html#l02069">wclear</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>, y <a class="el" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00302"></a>00302 {
+<a name="l00303"></a>00303    <span class="keywordtype">int</span> i,j;
+<a name="l00304"></a>00304 
+<a name="l00305"></a>00305    <a class="code" href="curses_8h.html#b7d162836c72389d5979e4bd890134e2">wclear</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00306"></a>00306    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00307"></a>00307    <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#95d95f6f767f2b2378a1a2242e34d8ae">A_BOLD</a>);
+<a name="l00308"></a>00308    <span class="comment">// por cada elemento</span>
+<a name="l00309"></a>00309    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>;i++) {
+<a name="l00310"></a>00310      <span class="comment">// dibujaremos una l¡nea vertical centrada</span>
+<a name="l00311"></a>00311      j=(LINES-8-vector[i])/2;
+<a name="l00312"></a>00312      <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,j,i);
+<a name="l00313"></a>00313      <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,vector[i]);
+<a name="l00314"></a>00314    }
+<a name="l00315"></a>00315    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00316"></a>00316 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="3204c04a7acd62df4a2e91fa9636a9f0"></a><!-- doxytag: member="Interfaz.c::MuestraVectoresaIntercambiar" ref="3204c04a7acd62df4a2e91fa9636a9f0" args="(int i1, int i2, int v1, int v2)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void MuestraVectoresaIntercambiar           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>i2</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>v2</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Destaca los vectores que van a ser intercambiados. 
+<p>
+Esta función destaca la representación gráfica de los vectores que acaban de ser intercambiados por el algoritmo de ordenación.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i1</em>&nbsp;</td><td>Índice del primer elemento a intercambiar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i2</em>&nbsp;</td><td>Índice del segundo elemento a intercambiar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v1</em>&nbsp;</td><td>Valor del primer elemento a intercambiar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v2</em>&nbsp;</td><td>Valor del segundo elemento a intercambiar </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>La interfaz por defecto muestra destacadas en otro color las líneas que representan a los elementos a intercambiar. </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00184">184</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="curses_8h-source.html#l01245">COLOR_PAIR</a>, <a class="el" href="curses_8h.html#501d833d181ad18f6ce61fef519a4ca0">COLS</a>, <a class="el" href="curses_8h.html#c2f22035276e0d4b82604de27d056fcd">LINES</a>, <a class="el" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron()</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>, <a class="el" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh()</a>, y <a class="el" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00069">Notifica()</a>.<div class="fragment"><pre class="fragment"><a name="l00185"></a>00185 {
+<a name="l00186"></a>00186   <span class="keywordflow">if</span>(i2&gt;=COLS-2) {
+<a name="l00187"></a>00187     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,0,i1);
+<a name="l00188"></a>00188     <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="charliteral">' '</span>,LINES-8);
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190     <span class="comment">// y las ponemos en su nueva posici¢n</span>
+<a name="l00191"></a>00191     <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00192"></a>00192     <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,(LINES-8-v2)/2,i1);
+<a name="l00193"></a>00193     <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,v2);
+<a name="l00194"></a>00194     <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00195"></a>00195     <span class="keywordflow">return</span>;
+<a name="l00196"></a>00196   }
+<a name="l00197"></a>00197   <span class="comment">// La l¡nea del primer elemento a intercambiar aparece en rojo</span>
+<a name="l00198"></a>00198   <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(4));
+<a name="l00199"></a>00199   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,(LINES-8-v1)/2,i1);
+<a name="l00200"></a>00200   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,v1);
+<a name="l00201"></a>00201   <span class="comment">// y la l¡nea del segundo elemento en verde</span>
+<a name="l00202"></a>00202   <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(5));
+<a name="l00203"></a>00203   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,(LINES-8-v2)/2,i2);
+<a name="l00204"></a>00204   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,v2);
+<a name="l00205"></a>00205   <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00206"></a>00206 
+<a name="l00207"></a>00207   <span class="comment">// Eliminamos esas l¡neas</span>
+<a name="l00208"></a>00208   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,0,i1);
+<a name="l00209"></a>00209   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="charliteral">' '</span>,LINES-8);
+<a name="l00210"></a>00210   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,0,i2);
+<a name="l00211"></a>00211   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="charliteral">' '</span>,LINES-8);
+<a name="l00212"></a>00212 
+<a name="l00213"></a>00213   <span class="comment">// y las ponemos en su nueva posici¢n</span>
+<a name="l00214"></a>00214   <a class="code" href="curses_8h.html#addb03796c8da18d380c85792abecf14">wattron</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<a class="code" href="curses_8h.html#7bd90267c46f209852e8eb1cac62f0fd">COLOR_PAIR</a>(2));
+<a name="l00215"></a>00215   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,(LINES-8-v1)/2,i2);
+<a name="l00216"></a>00216   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,v1);
+<a name="l00217"></a>00217   <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,(LINES-8-v2)/2,i1);
+<a name="l00218"></a>00218   <a class="code" href="curses_8h.html#7e1d0efd935188196c5e59ea9bc8d44d">wvline</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,ACS_VLINE,v2);
+<a name="l00219"></a>00219 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="75cebeaa86abcdd1964078b1b59fc0e6"></a><!-- doxytag: member="Interfaz.c::Presentacion" ref="75cebeaa86abcdd1964078b1b59fc0e6" args="(TAlgoritmo *algoritmos, int nAlgoritmos)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void Presentacion           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="struct_t_algoritmo.html">TAlgoritmo</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>algoritmos</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nAlgoritmos</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Efectúa la presentación del programa. 
+<p>
+El núcleo del programa llama a esta función facilitándole la lista de algoritmos que hay disponibles y un entero con el número de elementos en dicha lista. Lo que se espera es que la función efectúe una presentación al usuario de la finalidad del programa, espere un tiempo o una pulsación de tecla y devuelva el control al programa principal sin hacer nada más.<p>
+<dl compact><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>algoritmos</em>&nbsp;</td><td>Vector con los algoritmos de ordenación registrados </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nAlgoritmos</em>&nbsp;</td><td>Entero indicando el número de algoritmos existentes en el vector </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Devuelve:</b></dt><dd>No hay valor de retorno </dd></dl>
+<dl compact><dt><b>Precondición:</b></dt><dd>El programa llamará a esta función una única vez, al inicio de la ejecución, por lo que es el lugar adecuado para mostrar instrucciones generales de uso. </dd></dl>
+<dl compact><dt><b>Postcondición:</b></dt><dd>La función debe dar oportunidad al usuario a leer la presentación, si devuelve el control de inmediato al programa principal éste avanzará al paso siguiente y las instrucciones no podrán ser leídas. </dd></dl>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00082">82</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Hace referencia a <a class="el" href="_principal_8c-source.html#l00050">algoritmos</a>, <a class="el" href="_interfaz_8h-source.html#l00025">EscribeCentrado</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wConsola</a>, <a class="el" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch()</a>, <a class="el" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove()</a>, <a class="el" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw()</a>, <a class="el" href="_interfaz_8c-source.html#l00016">wProceso</a>, y <a class="el" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh()</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00083"></a>00083 {
+<a name="l00084"></a>00084    <span class="keywordtype">int</span> i;
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086    <span class="comment">/* Unos cuantos mensajes con instrucciones */</span>
+<a name="l00087"></a>00087    <a class="code" href="_interfaz_8h.html#92a42d690211f3b78307271329617f57">EscribeCentrado</a>(0,<span class="stringliteral">"M‚todos de ordenaci¢n - MTP II"</span>);
+<a name="l00088"></a>00088    <a class="code" href="_interfaz_8h.html#92a42d690211f3b78307271329617f57">EscribeCentrado</a>(1,<span class="stringliteral">"Francisco Charte Ojeda"</span>);
+<a name="l00089"></a>00089    <a class="code" href="curses_8h.html#9e538aa43f59213dd7f048db94231ecb">wmove</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,4,3);
+<a name="l00090"></a>00090    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"Este programa permite comprobar el funcionamiento de "</span>);
+<a name="l00091"></a>00091    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"diferentes algoritmos de ordenaci¢n, mostrando visualmente "</span>);
+<a name="l00092"></a>00092    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"el proceso que siguen y calculando el n£mero de  operaciones"</span>);
+<a name="l00093"></a>00093    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">" y  de intercambios que se llevan a cabo en cada caso. Su "</span>);
+<a name="l00094"></a>00094    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"finalidad es exclusivamente did ctica, por ello est  abierto "</span>);
+<a name="l00095"></a>00095    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"a la adici¢n de otros algoritmos con gran sencillez.\n"</span>);
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097    <span class="comment">/* Indicamos el n£mero de algoritmos existentes y mostramos el nombre de</span>
+<a name="l00098"></a>00098 <span class="comment">     cada uno de ellos */</span>
+<a name="l00099"></a>00099    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"\n  Actualmente hay registrados %d algoritmos: "</span>, <a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>);
+<a name="l00100"></a>00100    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>;i++)
+<a name="l00101"></a>00101       <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>, <span class="stringliteral">"%s - "</span>,<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[i].nombre);
+<a name="l00102"></a>00102    <a class="code" href="curses_8h.html#0aa8af35872c31e76e69a7794295821b">wprintw</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>,<span class="stringliteral">"\n\n   Pulsa una tecla para comenzar a utilizar el programa"</span>);
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104    <a class="code" href="curses_8h.html#85e93e08c2ec5dc6ac23b2d4e366d807">wrefresh</a>(<a class="code" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>);
+<a name="l00105"></a>00105    <a class="code" href="curses_8h.html#7339736ffd86452bda63071d8f4974c9">wgetch</a>(<a class="code" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>);
+<a name="l00106"></a>00106 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Documentación de las variables</h2>
+<a class="anchor" name="7188a0fbf4be7361c9d6748a2fdf972f"></a><!-- doxytag: member="Interfaz.c::retardo" ref="7188a0fbf4be7361c9d6748a2fdf972f" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="_interfaz_8c.html#7188a0fbf4be7361c9d6748a2fdf972f">retardo</a> = 100          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00015">15</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Referenciado por <a class="el" href="_interfaz_8c-source.html#l00222">MuestraNotificacion()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="c2658b6c04e1dee80080eda7d5c1c860"></a><!-- doxytag: member="Interfaz.c::wConsola" ref="c2658b6c04e1dee80080eda7d5c1c860" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="struct__win.html">WINDOW</a> * <a class="el" href="_interfaz_8c.html#c2658b6c04e1dee80080eda7d5c1c860">wConsola</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Ventana donde se mostrar  el proceso de ordenaci¢n 
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00016">16</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Referenciado por <a class="el" href="_interfaz_8c-source.html#l00027">InicializaPantalla()</a>, <a class="el" href="_interfaz_8c-source.html#l00284">MuestraFinAlgoritmo()</a>, <a class="el" href="_interfaz_8c-source.html#l00259">MuestraInicioAlgoritmo()</a>, <a class="el" href="_interfaz_8c-source.html#l00222">MuestraNotificacion()</a>, y <a class="el" href="_interfaz_8c-source.html#l00082">Presentacion()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="81fd2b019a3452ceaf55dd0d10ec25b7"></a><!-- doxytag: member="Interfaz.c::wProceso" ref="81fd2b019a3452ceaf55dd0d10ec25b7" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="struct__win.html">WINDOW</a>* <a class="el" href="_interfaz_8c.html#81fd2b019a3452ceaf55dd0d10ec25b7">wProceso</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Retardo por defecto de una d‚cima de segundo 
+<p>
+Definición en la línea <a class="el" href="_interfaz_8c-source.html#l00016">16</a> del archivo <a class="el" href="_interfaz_8c-source.html">Interfaz.c</a>.
+<p>
+Referenciado por <a class="el" href="_interfaz_8c-source.html#l00110">EnumeraAlgoritmos()</a>, <a class="el" href="_interfaz_8c-source.html#l00027">InicializaPantalla()</a>, <a class="el" href="_interfaz_8c-source.html#l00222">MuestraNotificacion()</a>, <a class="el" href="_interfaz_8c-source.html#l00301">MuestraVector()</a>, <a class="el" href="_interfaz_8c-source.html#l00184">MuestraVectoresaIntercambiar()</a>, y <a class="el" href="_interfaz_8c-source.html#l00082">Presentacion()</a>.    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Generado el Mon May 22 17:13:21 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

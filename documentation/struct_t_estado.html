@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: Referencia de la Estructura TEstado</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li id="current"><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="classes.html"><span>Lista&nbsp;alfabética</span></a></li>
+    <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;componentes</span></a></li>
+    <li><a href="hierarchy.html"><span>Jerarquía&nbsp;de&nbsp;la&nbsp;clase</span></a></li>
+    <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+  </ul></div>
+<h1>Referencia de la Estructura TEstado</h1><!-- doxytag: class="TEstado" -->Información que cada algoritmo devolverá al programa principal.  
+<a href="#_details">Más...</a>
+<p>
+<code>#include &lt;<a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Atributos públicos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html#2980f16b12f22496f80f29f193a7bd20">deElemento</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html#2c74f05a471ba2a36ac951b64090e809">aElemento</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html#e0221a0625168b69438db0f538583507">nOperaciones</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">nIntercambios</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">vector</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Descripción detallada</h2>
+Información que cada algoritmo devolverá al programa principal. 
+<p>
+Cuando se invoca a un método de ordenación hay que entregarle un puntero a una estructura de este tipo debidamente inicializada, con los primeros cuatro campos puestos a 0 y el puntero <em>vector</em> apuntando al vector a ordenar. La función de ordenación irá actualizando ciertos elementos de esta estructurá y la facilitará como parámetro cada vez que invoque a la función de notificación. 
+<p>
+
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00030">30</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.<hr><h2>Documentación de los datos miembro</h2>
+<a class="anchor" name="2c74f05a471ba2a36ac951b64090e809"></a><!-- doxytag: member="TEstado::aElemento" ref="2c74f05a471ba2a36ac951b64090e809" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="struct_t_estado.html#2c74f05a471ba2a36ac951b64090e809">TEstado::aElemento</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Elemento que va a cambiarse 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00032">32</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00069">Notifica()</a>, <a class="el" href="_algoritmos_8c-source.html#l00070">ordBurbuja()</a>, <a class="el" href="_algoritmos_8c-source.html#l00090">ordBurbujaMejorado()</a>, <a class="el" href="_algoritmos_8c-source.html#l00043">ordInsercion()</a>, <a class="el" href="_algoritmos_8c-source.html#l00114">ordSacudida()</a>, <a class="el" href="_algoritmos_8c-source.html#l00152">ordShell()</a>, y <a class="el" href="_algoritmos_8c-source.html#l00179">quickSort()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="2980f16b12f22496f80f29f193a7bd20"></a><!-- doxytag: member="TEstado::deElemento" ref="2980f16b12f22496f80f29f193a7bd20" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="struct_t_estado.html#2980f16b12f22496f80f29f193a7bd20">TEstado::deElemento</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00031">31</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00069">Notifica()</a>, <a class="el" href="_algoritmos_8c-source.html#l00070">ordBurbuja()</a>, <a class="el" href="_algoritmos_8c-source.html#l00090">ordBurbujaMejorado()</a>, <a class="el" href="_algoritmos_8c-source.html#l00043">ordInsercion()</a>, <a class="el" href="_algoritmos_8c-source.html#l00114">ordSacudida()</a>, <a class="el" href="_algoritmos_8c-source.html#l00152">ordShell()</a>, y <a class="el" href="_algoritmos_8c-source.html#l00179">quickSort()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="680ba5140fe54d981bea53eacde4e0d7"></a><!-- doxytag: member="TEstado::nIntercambios" ref="680ba5140fe54d981bea53eacde4e0d7" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">TEstado::nIntercambios</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Número de ciclos ejecutados por el algoritmo 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00034">34</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>, y <a class="el" href="_interfaz_8c-source.html#l00222">MuestraNotificacion()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="e0221a0625168b69438db0f538583507"></a><!-- doxytag: member="TEstado::nOperaciones" ref="e0221a0625168b69438db0f538583507" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="struct_t_estado.html#e0221a0625168b69438db0f538583507">TEstado::nOperaciones</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+destino del elemento a intercambiar 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00033">33</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>, <a class="el" href="_interfaz_8c-source.html#l00222">MuestraNotificacion()</a>, <a class="el" href="_algoritmos_8c-source.html#l00090">ordBurbujaMejorado()</a>, <a class="el" href="_algoritmos_8c-source.html#l00043">ordInsercion()</a>, <a class="el" href="_algoritmos_8c-source.html#l00114">ordSacudida()</a>, <a class="el" href="_algoritmos_8c-source.html#l00016">ordSeleccion()</a>, <a class="el" href="_algoritmos_8c-source.html#l00152">ordShell()</a>, y <a class="el" href="_algoritmos_8c-source.html#l00179">quickSort()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="69cfaa6a7a5e9a7a00e915b8078dbe98"></a><!-- doxytag: member="TEstado::vector" ref="69cfaa6a7a5e9a7a00e915b8078dbe98" args="" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int* <a class="el" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">TEstado::vector</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Número de intercambios de elementos efectuados 
+<p>
+Definición en la línea <a class="el" href="_definiciones_8h-source.html#l00035">35</a> del archivo <a class="el" href="_definiciones_8h-source.html">Definiciones.h</a>.
+<p>
+Referenciado por <a class="el" href="_principal_8c-source.html#l00109">main()</a>, y <a class="el" href="_principal_8c-source.html#l00069">Notifica()</a>.    </td>
+  </tr>
+</table>
+<hr>La documentación para esta estructura fué generada a partir del siguiente archivo:<ul>
+<li>D:/Ordena/<a class="el" href="_definiciones_8h-source.html">Definiciones.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generado el Mon May 22 17:13:21 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

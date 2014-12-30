@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: C:/Documents and Settings/Francisco/Mis documentos/Estructuras/estadis.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>C:/Documents and Settings/Francisco/Mis documentos/Estructuras/estadis.h</h1><a href="estadis_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00007"></a>00007 <span class="preprocessor">#ifndef _ESTAD_H_</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span><span class="preprocessor">#define _ESTAD_H_</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span>
+<a name="l00011"></a><a class="code" href="estadis_8h.html#7c6368b321bd9acd0149b030bb8275ed">00011</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {<span class="keyword">false</span>=0,<span class="keyword">true</span>=1} <a class="code" href="estadis_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>;
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="struct_t_racional.html">00013</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00014"></a><a class="code" href="struct_t_racional.html#c803e906fcb95006fdccb8717c2d7aae">00014</a>    <span class="keywordtype">float</span> numerador, denominador;
+<a name="l00015"></a>00015 } <a class="code" href="struct_t_racional.html">TRacional</a>;
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#c5d11897fc9dd5a98fd58fd5228350fd">leeRacional</a>();
+<a name="l00018"></a>00018 <span class="keywordtype">void</span> <a class="code" href="estadis_8c.html#8d2976d7f8567afd39d0f3d7d5f73db7">muestraRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> unRacional);
+<a name="l00019"></a>00019 <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#7269ab15bcd21aebf16af724de79330e">sumaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> sumando1,<a class="code" href="struct_t_racional.html">TRacional</a> sumando2);
+<a name="l00020"></a>00020 <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#61f022690828811867220b6d422d2e4c">restaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> minuendo,<a class="code" href="struct_t_racional.html">TRacional</a> sustraendo);
+<a name="l00021"></a>00021 <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#bf7e2658eea4b608158654be7362d742">multiplicaRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> factor1,<a class="code" href="struct_t_racional.html">TRacional</a> factor2);
+<a name="l00022"></a>00022 <a class="code" href="struct_t_racional.html">TRacional</a> <a class="code" href="estadis_8c.html#acbdf518d5a69a197b3e71e61c6b820d">divideRacional</a>(<a class="code" href="struct_t_racional.html">TRacional</a> dividendo,<a class="code" href="struct_t_racional.html">TRacional</a> divisor);
+<a name="l00023"></a>00023 
+<a name="l00028"></a>00028 <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#cf366b81c544cc2b0c7fec415284368d">factorial</a>(<span class="keywordtype">long</span> n);
+<a name="l00029"></a>00029 
+<a name="l00037"></a>00037 <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#3639a98907117d02a8b1b9ab65d9f19a">potencia</a>(<span class="keywordtype">long</span> base,<span class="keywordtype">long</span> exponente);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#25510e369e72e243b192e2191e9d463d">leeEntero</a>();
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="keywordtype">double</span> <a class="code" href="estadis_8c.html#939b39596aa2ad2cee28d2532c151842">ecuacion</a>(<span class="keywordtype">long</span> a, <span class="keywordtype">long</span> b, <span class="keywordtype">long</span> c);
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="keywordtype">long</span> <a class="code" href="estadis_8c.html#2931429a493d5c0feca19b04a99e7f55">mcd</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="keywordtype">long</span>* <a class="code" href="estadis_8c.html#7e45cb6c7956783090107092da66f7d9">divisores</a>(<span class="keywordtype">long</span> a);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="preprocessor">#endif _ESTAD_H_</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Generado el Sun May 21 17:03:01 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

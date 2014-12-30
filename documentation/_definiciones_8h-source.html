@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: D:/Ordena/Definiciones.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>D:/Ordena/Definiciones.h</h1><a href="_definiciones_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __DEFINICIONES_H__</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __DEFINICIONES_H__</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00016"></a><a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">00016</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> {
+<a name="l00017"></a>00017    <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>=0,
+<a name="l00018"></a>00018    <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>
+<a name="l00019"></a>00019 } <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a>;
+<a name="l00020"></a>00020 
+<a name="l00030"></a><a class="code" href="struct_t_estado.html">00030</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00031"></a><a class="code" href="struct_t_estado.html#2980f16b12f22496f80f29f193a7bd20">00031</a>    <span class="keywordtype">int</span> deElemento; 
+<a name="l00032"></a><a class="code" href="struct_t_estado.html#2c74f05a471ba2a36ac951b64090e809">00032</a>    <span class="keywordtype">int</span> aElemento;  
+<a name="l00033"></a><a class="code" href="struct_t_estado.html#e0221a0625168b69438db0f538583507">00033</a>    <span class="keywordtype">int</span> nOperaciones; 
+<a name="l00034"></a><a class="code" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">00034</a>    <span class="keywordtype">int</span> nIntercambios; 
+<a name="l00035"></a><a class="code" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">00035</a>    <span class="keywordtype">int</span> *vector; 
+<a name="l00036"></a>00036 } <a class="code" href="struct_t_estado.html">TEstado</a>;
+<a name="l00037"></a>00037 
+<a name="l00050"></a><a class="code" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">00050</a> <span class="keyword">typedef</span> <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed">boolean</a> (*<a class="code" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a>)(<a class="code" href="struct_t_estado.html">TEstado</a>*);
+<a name="l00051"></a>00051 
+<a name="l00062"></a><a class="code" href="_definiciones_8h.html#0b019e30ebfa45bb038857e02e3dcdf5">00062</a> <span class="keyword">typedef</span> void (*<a class="code" href="_definiciones_8h.html#0b019e30ebfa45bb038857e02e3dcdf5">Ordena</a>)(<span class="keywordtype">int</span> [], int, <a class="code" href="_definiciones_8h.html#bb5107dd485d82712eadf7a30ab1281f">Informa</a>, <a class="code" href="struct_t_estado.html">TEstado</a>*);
+<a name="l00063"></a>00063 
+<a name="l00068"></a><a class="code" href="struct_t_algoritmo.html">00068</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00069"></a><a class="code" href="struct_t_algoritmo.html#70c5215015266790fec48fd57462fd90">00069</a>    <span class="keywordtype">char</span>* nombre; 
+<a name="l00070"></a><a class="code" href="struct_t_algoritmo.html#9abd981fe9b2e28fce032352b28bf6ca">00070</a>    <a class="code" href="_definiciones_8h.html#0b019e30ebfa45bb038857e02e3dcdf5">Ordena</a> f;   
+<a name="l00071"></a><a class="code" href="struct_t_algoritmo.html#7281cc1d25d98a0ea3224cc602422bba">00071</a>    <span class="keywordtype">boolean</span> elegido; 
+<a name="l00072"></a>00072 } <a class="code" href="struct_t_algoritmo.html">TAlgoritmo</a>;
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="preprocessor">#endif </span><span class="comment">/* __DEFINICIONES_H__ */</span>
+<a name="l00075"></a>00075 
+</pre></div><hr size="1"><address style="align: right;"><small>Generado el Mon May 22 17:13:21 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

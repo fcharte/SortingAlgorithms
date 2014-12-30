@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: D:/Ordena/Principal.c Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>D:/Ordena/Principal.c</h1><a href="_principal_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00036"></a>00036 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00037"></a>00037 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00038"></a>00038 <span class="preprocessor">#include &lt;assert.h&gt;</span>
+<a name="l00039"></a>00039 <span class="preprocessor">#include "<a class="code" href="_interfaz_8h.html">Interfaz.h</a>"</span>
+<a name="l00040"></a>00040 <span class="preprocessor">#include "<a class="code" href="_definiciones_8h.html">Definiciones.h</a>"</span>
+<a name="l00041"></a>00041 <span class="preprocessor">#include "<a class="code" href="_algoritmos_8h.html">Algoritmos.h</a>"</span>
+<a name="l00042"></a>00042 
+<a name="l00050"></a><a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">00050</a> <a class="code" href="struct_t_algoritmo.html">TAlgoritmo</a> <a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[] = {
+<a name="l00051"></a>00051   {<span class="stringliteral">"Selecci¢n"</span>, <a class="code" href="_algoritmos_8c.html#7cb0736a46c608ec7181de73dc9cfb70">ordSeleccion</a>, <a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>},
+<a name="l00052"></a>00052   {<span class="stringliteral">"Inserci¢n"</span>, <a class="code" href="_algoritmos_8c.html#e44a2ccc0677faf4e64e55fae9cd6e28">ordInsercion</a>, falso},
+<a name="l00053"></a>00053   {<span class="stringliteral">"Burbuja"</span>, <a class="code" href="_algoritmos_8c.html#5afff1e217f56e1d42f0d005a18c5799">ordBurbuja</a>, falso},
+<a name="l00054"></a>00054   {<span class="stringliteral">"Burbuja mejorado"</span>, <a class="code" href="_algoritmos_8c.html#d12fc74982d2c3de21d4737be05e6c28">ordBurbujaMejorado</a>, falso},
+<a name="l00055"></a>00055   {<span class="stringliteral">"Sacudida"</span>, <a class="code" href="_algoritmos_8c.html#41089f7ab2bb3d2837958d05e5243fee">ordSacudida</a>, falso },
+<a name="l00056"></a>00056   {<span class="stringliteral">"Shell"</span>, <a class="code" href="_algoritmos_8c.html#b5c45731b8cf20cad3936d5bbf6a895a">ordShell</a>, falso },
+<a name="l00057"></a>00057   {<span class="stringliteral">"Quick"</span>, <a class="code" href="_algoritmos_8c.html#b0ba5e974b7733d4e3e759b0a2871c6c">ordQuick</a>, falso }
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 };
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">00061</a> <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>; <span class="comment">// N£mero de elementos a ordenar</span>
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="comment">/* N£mero de algoritmos registrados. nAlgoritmos se actualiza autom ticamente</span>
+<a name="l00064"></a>00064 <span class="comment">  en caso de que se agreguen m s elementos a la matriz algoritmos anterior */</span>
+<a name="l00065"></a><a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">00065</a> <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>=<span class="keyword">sizeof</span>(<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>)/<span class="keyword">sizeof</span>(<a class="code" href="_principal_8c.html#d6362c06c66faa617af26ad7176674b7">algoritmos</a>[0]);
+<a name="l00066"></a>00066 
+<a name="l00069"></a><a class="code" href="_principal_8c.html#d1b9387ae0422385d0be66cac843d14f">00069</a> <span class="keywordtype">boolean</span> <a class="code" href="_principal_8c.html#d1b9387ae0422385d0be66cac843d14f">Notifica</a>(<a class="code" href="struct_t_estado.html">TEstado</a>* estado)
+<a name="l00070"></a>00070 {
+<a name="l00071"></a>00071   <span class="keywordtype">boolean</span> retorno=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>;
+<a name="l00072"></a>00072   <span class="keywordtype">int</span> i,j,tecla;
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074   <span class="comment">// Se muestran los elementos a intercambiar</span>
+<a name="l00075"></a>00075   <a class="code" href="_interfaz_8c.html#3204c04a7acd62df4a2e91fa9636a9f0">MuestraVectoresaIntercambiar</a>(
+<a name="l00076"></a>00076     estado-&gt;<a class="code" href="struct_t_estado.html#2c74f05a471ba2a36ac951b64090e809">aElemento</a>,estado-&gt;<a class="code" href="struct_t_estado.html#2980f16b12f22496f80f29f193a7bd20">deElemento</a>,
+<a name="l00077"></a>00077     estado-&gt;<a class="code" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">vector</a>[estado-&gt;<a class="code" href="struct_t_estado.html#2c74f05a471ba2a36ac951b64090e809">aElemento</a>],
+<a name="l00078"></a>00078     estado-&gt;<a class="code" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">vector</a>[estado-&gt;<a class="code" href="struct_t_estado.html#2980f16b12f22496f80f29f193a7bd20">deElemento</a>]);
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080   <span class="comment">// y se notifica el cambio</span>
+<a name="l00081"></a>00081   retorno=<a class="code" href="_interfaz_8c.html#6137692c0c5116bfc8771d5c1b78ced2">MuestraNotificacion</a>(estado, <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>);
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083   <span class="keywordflow">return</span> retorno;
+<a name="l00084"></a>00084 }
+<a name="l00085"></a>00085 
+<a name="l00087"></a><a class="code" href="_principal_8c.html#0a9befafc1cbe203a8f2292fe5abf124">00087</a> <span class="keywordtype">void</span> <a class="code" href="_principal_8c.html#0a9befafc1cbe203a8f2292fe5abf124">VectorAleatorio</a>(<span class="keywordtype">int</span>* elementos, <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>, <span class="keywordtype">int</span> rango)
+<a name="l00088"></a>00088 {
+<a name="l00089"></a>00089    <span class="keywordtype">int</span> i;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091    <span class="keywordflow">for</span>(i=0;i&lt;nElementos;i++)
+<a name="l00092"></a>00092      <span class="comment">// los n£meros estar n en el rango adecuado</span>
+<a name="l00093"></a>00093      elementos[i] = rand()%rango+1;
+<a name="l00094"></a>00094 }
+<a name="l00095"></a>00095 
+<a name="l00097"></a><a class="code" href="_principal_8c.html#9d3df0261a7a88fe8af180c49c31b9ed">00097</a> <span class="keywordtype">boolean</span> <a class="code" href="_principal_8c.html#9d3df0261a7a88fe8af180c49c31b9ed">VerificaOrden</a>(<span class="keywordtype">int</span>* elementos, <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>)
+<a name="l00098"></a>00098 {
+<a name="l00099"></a>00099    <span class="keywordtype">boolean</span> ordenado=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed08e2dd24d7eaa755408876daf38a391f">verdad</a>;
+<a name="l00100"></a>00100    <span class="keywordtype">int</span> i;
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102    <span class="keywordflow">for</span>(i=0;i&lt;nElementos-1 &amp;&amp; ordenado; i++)
+<a name="l00103"></a>00103      ordenado=elementos[i]&lt;=elementos[i+1];
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105    <span class="keywordflow">return</span> ordenado;
+<a name="l00106"></a>00106 }
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 <span class="comment">/* Punto de entrada a la aplicaci¢n */</span>
+<a name="l00109"></a><a class="code" href="_principal_8c.html#0ddf1224851353fc92bfbff6f499fa97">00109</a> <span class="keywordtype">int</span> <a class="code" href="_principal_8c.html#0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])
+<a name="l00110"></a>00110 {
+<a name="l00111"></a>00111    <span class="keywordtype">int</span> i, rango;
+<a name="l00112"></a>00112    <span class="keywordtype">boolean</span> fin=<a class="code" href="_definiciones_8h.html#7c6368b321bd9acd0149b030bb8275ed6dbb7b3d15429bee8dad6b7ca8cc39bd">falso</a>;
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114    <span class="keywordtype">int</span> *elementos, *vector;
+<a name="l00115"></a>00115    <a class="code" href="struct_t_estado.html">TEstado</a> *estado;
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117    <span class="comment">/* Inicializamos la interfaz y obtenemos el n£mero de elementos</span>
+<a name="l00118"></a>00118 <span class="comment">     que pueden representarse */</span>
+<a name="l00119"></a>00119    <a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>=<a class="code" href="_interfaz_8c.html#94641aff6c4dee086e5596089ed68a4b">InicializaPantalla</a>();
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121    <span class="comment">// Obtenemos el rango de los valores</span>
+<a name="l00122"></a>00122    rango=<a class="code" href="_interfaz_8c.html#0638ffd4e73d4d3d9bb6346285d9262b">CalculaRango</a>();
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124    <span class="comment">/* y creamos los vectores. Se usan dos, uno que mantiene los elementos</span>
+<a name="l00125"></a>00125 <span class="comment">    aleatorios obtenidos inicialmente y otro que va entreg ndose a los</span>
+<a name="l00126"></a>00126 <span class="comment">    algoritmos, para que todos ellos operen sobre el mismo conjunto de</span>
+<a name="l00127"></a>00127 <span class="comment">    elementos y puedan ser comparados de manera homog‚nea. */</span>
+<a name="l00128"></a>00128    elementos=malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*(<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>+1));
+<a name="l00129"></a>00129    assert(elementos!=<a class="code" href="curses_8h.html#070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);
+<a name="l00130"></a>00130    vector=malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*(<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>+1));
+<a name="l00131"></a>00131    assert(vector!=<a class="code" href="curses_8h.html#070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);
+<a name="l00132"></a>00132    estado=malloc(<span class="keyword">sizeof</span>(<a class="code" href="struct_t_estado.html">TEstado</a>)*<a class="code" href="_principal_8c.html#ec0a5357b34bf21eecd39cdf286be4ca">nAlgoritmos</a>);
+<a name="l00133"></a>00133    assert(estado!=<a class="code" href="curses_8h.html#070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135    <span class="comment">// Presentaci¢n del programa</span>
+<a name="l00136"></a>00136    <a class="code" href="_interfaz_8c.html#75cebeaa86abcdd1964078b1b59fc0e6">Presentacion</a>(algoritmos,nAlgoritmos);
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138    <span class="keywordflow">while</span>(!fin) { <span class="comment">// Hasta que se pulse ESC en la selecci¢n de algoritmos</span>
+<a name="l00139"></a>00139     <span class="comment">// Obtenemos un nuevo vector aleatorio</span>
+<a name="l00140"></a>00140     <a class="code" href="_principal_8c.html#0a9befafc1cbe203a8f2292fe5abf124">VectorAleatorio</a>(vector,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>,rango);
+<a name="l00141"></a>00141     <span class="comment">// y permitimos la selecci¢n de algoritmos a aplicarle</span>
+<a name="l00142"></a>00142     fin=<a class="code" href="_interfaz_8c.html#dfea4ed6f94518dd065f66267e687858">EnumeraAlgoritmos</a>(algoritmos, nAlgoritmos);
+<a name="l00143"></a>00143     <span class="keywordflow">if</span>(!fin) { <span class="comment">// si no se optado por salir del programa</span>
+<a name="l00144"></a>00144       <span class="keywordflow">for</span>(i=0; i&lt;nAlgoritmos; i++) {
+<a name="l00145"></a>00145        <span class="keywordflow">if</span>(algoritmos[i].elegido) { <span class="comment">// y los entregamos a cada algoritmo elegido</span>
+<a name="l00146"></a>00146          <a class="code" href="_interfaz_8c.html#4cc191166b3548d824f7dad7546c5f35">MuestraVector</a>(vector,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>); <span class="comment">// mostramos los elementos</span>
+<a name="l00147"></a>00147          memcpy(elementos,vector,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>*<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));
+<a name="l00148"></a>00148          estado[i].<a class="code" href="struct_t_estado.html#e0221a0625168b69438db0f538583507">nOperaciones</a>=estado[i].<a class="code" href="struct_t_estado.html#680ba5140fe54d981bea53eacde4e0d7">nIntercambios</a>=0;
+<a name="l00149"></a>00149          estado[i].<a class="code" href="struct_t_estado.html#69cfaa6a7a5e9a7a00e915b8078dbe98">vector</a>=elementos;
+<a name="l00150"></a>00150          <a class="code" href="_interfaz_8c.html#3c4e519b7c30df8b66ba7952787bcdd2">MuestraInicioAlgoritmo</a>(algoritmos[i].nombre);
+<a name="l00151"></a>00151          algoritmos[i].f(elementos,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>,<a class="code" href="_principal_8c.html#d1b9387ae0422385d0be66cac843d14f">Notifica</a>,&amp;estado[i]);
+<a name="l00152"></a>00152          <a class="code" href="_interfaz_8c.html#4cc191166b3548d824f7dad7546c5f35">MuestraVector</a>(elementos,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>); <span class="comment">// mostramos los elementos</span>
+<a name="l00153"></a>00153          <a class="code" href="_interfaz_8c.html#afd5aa833ea06ec38037e9c38244ae6b">MuestraFinAlgoritmo</a>(<a class="code" href="_principal_8c.html#9d3df0261a7a88fe8af180c49c31b9ed">VerificaOrden</a>(elementos,<a class="code" href="_principal_8c.html#5a1b2f3dd0af0072a3be01aa80ce6e80">nElementos</a>));
+<a name="l00154"></a>00154        }
+<a name="l00155"></a>00155      }
+<a name="l00156"></a>00156      <a class="code" href="_interfaz_8c.html#90c27790ac62e458da632aa1e2f7849f">MuestraResumen</a>(algoritmos,estado,nAlgoritmos);
+<a name="l00157"></a>00157     }
+<a name="l00158"></a>00158    }
+<a name="l00159"></a>00159    free(estado);
+<a name="l00160"></a>00160    free(elementos);
+<a name="l00161"></a>00161    <a class="code" href="_interfaz_8c.html#83bc041ceb887acf230c054d2ce47cd6">FinInterfaz</a>();
+<a name="l00162"></a>00162 }
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164 
+</pre></div><hr size="1"><address style="align: right;"><small>Generado el Mon May 22 17:13:21 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>

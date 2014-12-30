@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>Algoritmos de ordenación: Referencia del Archivo C:/Documents and Settings/Francisco/Mis documentos/Estructuras/LAGRANGE.CPP</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.4.6-NO -->
+<div class="tabs">
+  <ul>
+    <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+    <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+    <li><a href="classes.html"><span>Estructuras&nbsp;de&nbsp;Datos</span></a></li>
+    <li id="current"><a href="files.html"><span>Archivos</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+    <li><a href="globals.html"><span>Archivos&nbsp;de&nbsp;los&nbsp;miembros</span></a></li>
+  </ul></div>
+<h1>Referencia del Archivo C:/Documents and Settings/Francisco/Mis documentos/Estructuras/LAGRANGE.CPP</h1><code>#include &lt;stdio.h&gt;</code><br>
+<code>#include &lt;conio.h&gt;</code><br>
+<code>#include &lt;malloc.h&gt;</code><br>
+
+<p>
+<a href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html">Ir al código fuente de este archivo.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p.html#d2356279053ea1a037ce9654e536c557">lagranja</a> (double x, double X[], double y[], int Lit)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p.html#cdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+
+</table>
+<hr><h2>Documentación de las funciones</h2>
+<a class="anchor" name="d2356279053ea1a037ce9654e536c557"></a><!-- doxytag: member="LAGRANGE.CPP::lagranja" ref="d2356279053ea1a037ce9654e536c557" args="(double x, double X[], double y[], int Lit)" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void lagranja           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>double&nbsp;</td>
+          <td class="mdname" nowrap> <em>X</em>[], </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>double&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>[], </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>Lit</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Definición en la línea <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html#l00005">5</a> del archivo <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html">LAGRANGE.CPP</a>.
+<p>
+Referenciado por <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html#l00023">main()</a>.<div class="fragment"><pre class="fragment"><a name="l00006"></a>00006 {
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008  <span class="keywordtype">double</span> r=0,num=1, den=1;
+<a name="l00009"></a>00009  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;Lit;i++){ <span class="comment">//para el total de polinomios</span>
+<a name="l00010"></a>00010    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;Lit;j++){ <span class="comment">//para cada polinomio</span>
+<a name="l00011"></a>00011        <span class="keywordflow">if</span> (i!=j){
+<a name="l00012"></a>00012                 num*=(x - X[j]);
+<a name="l00013"></a>00013                 den*=(X[i] - X[j]);
+<a name="l00014"></a>00014        }
+<a name="l00015"></a>00015    }
+<a name="l00016"></a>00016    num*=y[i];
+<a name="l00017"></a>00017    r+=num/den;
+<a name="l00018"></a>00018    num=den=1;
+<a name="l00019"></a>00019  }
+<a name="l00020"></a>00020  printf(<span class="stringliteral">"\nEl resultado es: %lf"</span>, r);
+<a name="l00021"></a>00021 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="cdef7a1fd863a6d3770c1268cb06add3"></a><!-- doxytag: member="LAGRANGE.CPP::main" ref="cdef7a1fd863a6d3770c1268cb06add3" args="()" --><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void main           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">void&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Definición en la línea <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html#l00023">23</a> del archivo <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html">LAGRANGE.CPP</a>.
+<p>
+Hace referencia a <a class="el" href="_l_a_g_r_a_n_g_e_8_c_p_p-source.html#l00005">lagranja()</a>.<div class="fragment"><pre class="fragment"><a name="l00024"></a>00024 {
+<a name="l00025"></a>00025  <span class="keywordtype">int</span> m;
+<a name="l00026"></a>00026  <span class="keywordtype">double</span> *X, *Y, x;
+<a name="l00027"></a>00027  <span class="comment">//clrscr();</span>
+<a name="l00028"></a>00028  printf(<span class="stringliteral">"cuantas entradas tendra la tabla?\n\t\t"</span>);
+<a name="l00029"></a>00029  scanf(<span class="stringliteral">"%d"</span>,&amp;m);
+<a name="l00030"></a>00030  X=(<span class="keywordtype">double</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>)*m);
+<a name="l00031"></a>00031  Y=(<span class="keywordtype">double</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>)*m);
+<a name="l00032"></a>00032  printf(<span class="stringliteral">"Ingresa la tabla los valores de X:\n"</span>);
+<a name="l00033"></a>00033  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;m; i++)    scanf(<span class="stringliteral">"%lf"</span>, &amp;X[i]);
+<a name="l00034"></a>00034  printf(<span class="stringliteral">"\nIngresa la tabla los valores de Y:\n"</span>);
+<a name="l00035"></a>00035  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;m; i++)        scanf(<span class="stringliteral">"%lf"</span>, &amp;Y[i]);
+<a name="l00036"></a>00036  printf(<span class="stringliteral">"Escribe el valor X para el cual se encontrara el valor de Y\n"</span>);
+<a name="l00037"></a>00037  scanf(<span class="stringliteral">"%lf"</span>,&amp;x);
+<a name="l00038"></a>00038  <a class="code" href="_l_a_g_r_a_n_g_e_8_c_p_p.html#d2356279053ea1a037ce9654e536c557">lagranja</a>(x, X, Y, m);
+<a name="l00039"></a>00039  getch();
+<a name="l00040"></a>00040 }
+</pre></div>
+<p>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Generado el Sun May 21 17:03:01 2006 para Algoritmos de ordenación por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.6-NO </small></address>
+</body>
+</html>
