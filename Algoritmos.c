@@ -153,7 +153,7 @@ void ordSacudida(int elementos[], int nelementos, Informa f, TEstado* estado)
 /* Shell sort */
 void ordShell(int elementos[], int nelementos, Informa f, TEstado* estado)
 {
-  int i, j, k, intervalo=nelementos, temp;
+  int i, j, intervalo=nelementos, temp;
   boolean fin=falso, terminado;
 
   while(intervalo>0 && !fin) {

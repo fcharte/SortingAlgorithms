@@ -69,8 +69,7 @@ int nAlgoritmos=sizeof(algoritmos)/sizeof(algoritmos[0]);
 boolean Notifica(TEstado* estado)
 {
   boolean retorno=falso;
-  int i,j,tecla;
-
+	
   // Se muestran los elementos a intercambiar
   MuestraVectoresaIntercambiar(
     estado->aElemento,estado->deElemento,
@@ -159,4 +158,6 @@ int main(int argc, char *argv[])
    free(estado);
    free(elementos);
    FinInterfaz();
+
+   return 0;
 }
