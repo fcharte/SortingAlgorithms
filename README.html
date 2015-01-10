@@ -55,8 +55,21 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="educational-implementation-of-sorting-algorithms" class="section level1">
 <h1>Educational implementation of sorting algorithms</h1>
 <p>Several sorting algorithms implemented in plain C language, with an extensible approach (new algorithms can be connected) and a simple visualization mechanishm aimed to understand how they work.</p>
-<p>The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the curses library.</p>
+<p>The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the ncurses library.</p>
 <p>The code is documented (in Spanish) with the <a href="http://www.stack.nl/~dimitri/doxygen/">doxygen tool</a>.</p>
+<div id="algorithms-implemented" class="section level2">
+<h2>Algorithms implemented</h2>
+<p>The algorithms currently implemented are the following:</p>
+<ul>
+<li>Bubble sort - <code>ordBurbuja()</code></li>
+<li>Improved bubble sort - <code>ordBurbujaMejorado()</code></li>
+<li>Selection sort - <code>ordSeleccion()</code></li>
+<li>Insertion sort - <code>ordInsercion()</code></li>
+<li>Shaker sort (also known as cocktail sort) - <code>ordSacudida()</code></li>
+<li>Shell sort - <code>ordShell()</code></li>
+<li>Quick sort - <code>ordQuick()</code></li>
+</ul>
+</div>
 <div id="compilation" class="section level2">
 <h2>Compilation</h2>
 <p>To compile this program you will need <code>gcc</code>, <code>ncurses</code> and <code>make</code>. A <code>Makefile</code> is provided along with the source code. Put all files, including the <code>Makefile</code>, in a directory, and type <code>make</code> to build the application. This will be the procedure to follow in GNU/Linux or OS X.</p>
