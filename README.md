@@ -48,4 +48,18 @@ To compile this program you will need `gcc`, `ncurses` and `make`. A `Makefile` 
 
 If you use Windows, look for [Cygwin](https://www.cygwin.com/) to obtain the tools you will need. The `curses.h` header file and the `libpdcurses.a` library are included in the `curses` folder of this repository.
 
+How to use the program
+----------------------
 
+Once it has been compiled, you can run the program simply typing its name. After the screen that shows the introduction, you can press a key to access the main menu. Using the cursor movement keys, you can select the sorting algorithms you want to run. While a algorithm is running you will see how each element in a random integer array is selected, compared and, if neccesary, interchanged. By means of the `+` and `- ` keys the speed of the process can be increased or reduced. After each sorting algorithm a resume will be shown, as well as at the end of all runnings.
+
+The following snapshots show the program running in GNU/Linux, Windows and OS X, respectively.
+
+The application running in a console window in GNU/Linux
+![The application running in a console window in GNU/Linux](documentation/EnGNULinux.png)
+
+The application running in a console window in Windows
+![The application running in a console window in Windows](documentation/EnDOS.jpg)
+
+The application running in a console window in OS X
+![The application running in a console window in OS X](documentation/EnMacOSX.jpg)
