@@ -74,13 +74,13 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h2>Modules of the project</h2>
 <p>The project is made of the following modules:</p>
 <ul>
-<li><p><a href="Definiciones.h">Definiciones.h</a>: Definitions of the data types used in the application, such as <code>boolean</code> (remember this is pure C, there is not native <code>boolean</code> type) or the generic pointer to sorting function <code>Orderna</code></p></li>
-<li><p><a href="Algoritmos.h">Algoritmos.h</a>: Contains the prototypes of the functions for each sorting algorithms, whose names are enumerated in the previous section</p></li>
-<li><p><a href="Algoritmos.c">Algoritmos.c</a>: Implementation of every sorting function defined in <a href="Algoritmos.h">Algoritmos.h</a></p></li>
-<li><p><a href="Interfaz.h">Interfaz.h</a>: Prototypes for the functions which are in control of the user interface of the application</p></li>
-<li><p><a href="Interfaz.c">Interfaz.c</a>: Implementation of user interface functions using the <code>ncurses</code> services</p></li>
-<li><p><a href="Principal.c">Principal.c</a>: This is the main entry point to the application. The <code>algoritmos</code> array defined at the beginning links the name of each sorting algorithm with the function where it is implemented, allowing the user to chose the algorithms they want to run</p></li>
-<li><p><a href="Makefile">Makefile</a>: Simple <code>make</code> file to build the application (see the following section)</p></li>
+<li><p><a href="src/Definiciones.h">Definiciones.h</a>: Definitions of the data types used in the application, such as <code>boolean</code> (remember this is pure C, there is not native <code>boolean</code> type) or the generic pointer to sorting function <code>Orderna</code></p></li>
+<li><p><a href="src/Algoritmos.h">Algoritmos.h</a>: Contains the prototypes of the functions for each sorting algorithms, whose names are enumerated in the previous section</p></li>
+<li><p><a href="src/Algoritmos.c">Algoritmos.c</a>: Implementation of every sorting function defined in <a href="Algoritmos.h">Algoritmos.h</a></p></li>
+<li><p><a href="src/Interfaz.h">Interfaz.h</a>: Prototypes for the functions which are in control of the user interface of the application</p></li>
+<li><p><a href="src/Interfaz.c">Interfaz.c</a>: Implementation of user interface functions using the <code>ncurses</code> services</p></li>
+<li><p><a href="src/Principal.c">Principal.c</a>: This is the main entry point to the application. The <code>algoritmos</code> array defined at the beginning links the name of each sorting algorithm with the function where it is implemented, allowing the user to chose the algorithms they want to run</p></li>
+<li><p><a href="src/Makefile">Makefile</a>: Simple <code>make</code> file to build the application (see the following section)</p></li>
 </ul>
 </div>
 <div id="compilation" class="section level2">
