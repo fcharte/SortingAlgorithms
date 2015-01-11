@@ -21,6 +21,26 @@ The algorithms currently implemented are the following:
 * Shell sort - `ordShell()`
 * Quick sort - `ordQuick()`
 
+Modules of the project
+----------------------
+
+The project is made of the following modules:
+
+* [Definiciones.h](Definiciones.h): Definitions of the data types used in the application, such as `boolean` (remember this is pure C, there is not native `boolean` type) or the generic pointer to sorting function `Orderna`
+
+* [Algoritmos.h](Algoritmos.h): Contains the prototypes of the functions for each sorting algorithms, whose names are enumerated in the previous section
+
+* [Algoritmos.c](Algoritmos.c): Implementation of every sorting function defined in [Algoritmos.h](Algoritmos.h)
+
+* [Interfaz.h](Interfaz.h): Prototypes for the functions which are in control of the user interface of the application
+
+* [Interfaz.c](Interfaz.c): Implementation of user interface functions using the `ncurses` services
+
+* [Principal.c](Principal.c): This is the main entry point to the application. The `algoritmos` array defined at the beginning links the name of each sorting algorithm with the function where it is implemented, allowing the user to chose the algorithms they want to run
+
+* [Makefile](Makefile): Simple `make` file to build the application (see the following section)
+
+
 Compilation
 -----------
 
