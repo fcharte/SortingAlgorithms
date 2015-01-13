@@ -51,7 +51,17 @@ If you use Windows, look for [Cygwin](https://www.cygwin.com/) to obtain the too
 How to use the program
 ----------------------
 
-Once it has been compiled, you can run the program simply typing its name. After the screen that shows the introduction, you can press a key to access the main menu. Using the cursor movement keys, you can select the sorting algorithms you want to run. While a algorithm is running you will see how each element in a random integer array is selected, compared and, if neccesary, interchanged. By means of the `+` and `- ` keys the speed of the process can be increased or reduced. After each sorting algorithm a resume will be shown, as well as at the end of all runnings.
+* Once it has been compiled, you can run the program simply typing its name.
+
+* After the screen that shows the introduction, you can press a key to access the main menu. Using the cursor movement keys, you can select the sorting algorithms you want to run.
+
+* While a algorithm is running you will see how each element in a random integer array is selected, compared and, if neccesary, interchanged.
+
+* By means of the `+` and `- ` keys the speed of the process can be increased or reduced. After each sorting algorithm a resume will be shown, as well as at the end of all runnings.
+
+* The program will get a **random vector** of integers, with as many items as columns fit in the screen, every time it is started. This vector is given as input to each of the selected algorithms, so that the obtained results can be compared.
+
+* The user can stop the program at any time pressing the **ESC** key. In this case the vector will not be completely sorted
 
 The following snapshots show the program running in GNU/Linux, Windows and OS X, respectively.
 
