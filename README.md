@@ -2,16 +2,16 @@ Educational implementation of sorting algorithms
 ================================================
 
 Several sorting algorithms implemented in plain C language, with an extensible approach (new algorithms can be connected)
-and a simple visualization mechanishm aimed to understand how they work.
+and a simple visualization mechanism aimed to understand how they work.
 
-The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the ncurses library.
+The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the [ncurses library](https://www.gnu.org/software/ncurses/).
 
 The code is documented (in Spanish) with the [doxygen tool](http://www.stack.nl/~dimitri/doxygen/).
 
 Algorithms implemented
 ----------------------
 
-The algorithms currently implemented are the following:
+The algorithms currently implemented are the following (the function in the [Algoritmos.c](src/Algoritmos.c) where each algorithm is coded is also indicated):
 
 * Bubble sort - `ordBurbuja()`
 * Improved bubble sort - `ordBurbujaMejorado()`

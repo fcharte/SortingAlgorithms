@@ -54,12 +54,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="educational-implementation-of-sorting-algorithms" class="section level1">
 <h1>Educational implementation of sorting algorithms</h1>
-<p>Several sorting algorithms implemented in plain C language, with an extensible approach (new algorithms can be connected) and a simple visualization mechanishm aimed to understand how they work.</p>
-<p>The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the ncurses library.</p>
+<p>Several sorting algorithms implemented in plain C language, with an extensible approach (new algorithms can be connected) and a simple visualization mechanism aimed to understand how they work.</p>
+<p>The C code is portable to Windows, GNU/Linux and OS X, as the user interface is based on the <a href="https://www.gnu.org/software/ncurses/">ncurses library</a>.</p>
 <p>The code is documented (in Spanish) with the <a href="http://www.stack.nl/~dimitri/doxygen/">doxygen tool</a>.</p>
 <div id="algorithms-implemented" class="section level2">
 <h2>Algorithms implemented</h2>
-<p>The algorithms currently implemented are the following:</p>
+<p>The algorithms currently implemented are the following (the function in the <a href="src/Algoritmos.c">Algoritmos.c</a> where each algorithm is coded is also indicated):</p>
 <ul>
 <li>Bubble sort - <code>ordBurbuja()</code></li>
 <li>Improved bubble sort - <code>ordBurbujaMejorado()</code></li>
@@ -95,7 +95,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><p>After the screen that shows the introduction, you can press a key to access the main menu. Using the cursor movement keys, you can select the sorting algorithms you want to run.</p></li>
 <li><p>While a algorithm is running you will see how each element in a random integer array is selected, compared and, if neccesary, interchanged.</p></li>
 <li><p>By means of the <code>+</code> and <code>-</code> keys the speed of the process can be increased or reduced. After each sorting algorithm a resume will be shown, as well as at the end of all runnings.</p></li>
-<li><p>The program will get a <strong>random vector</strong> of integers, as many as columns fit in the screen, every time it is started. This vector is given as input to each of the selected algorithms, so that the obtained results can be compared.</p></li>
+<li><p>The program will get a <strong>random vector</strong> of integers, with as many items as columns fit in the screen, every time it is started. This vector is given as input to each of the selected algorithms, so that the obtained results can be compared.</p></li>
 <li><p>The user can stop the program at any time pressing the <strong>ESC</strong> key. In this case the vector will not be completely sorted</p></li>
 </ul>
 <p>The following snapshots show the program running in GNU/Linux, Windows and OS X, respectively.</p>
